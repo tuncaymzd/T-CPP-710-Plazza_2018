@@ -6,3 +6,19 @@ CMakeFiles/Plazza.dir/main.cpp.o: ../ParserConfig.cpp
 CMakeFiles/Plazza.dir/main.cpp.o: ../include/ParserConfig.h
 CMakeFiles/Plazza.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/Plazza.dir/shared/American.cpp.o: ../shared/American.cpp
+CMakeFiles/Plazza.dir/shared/American.cpp.o: ../shared/includes/American.h
+CMakeFiles/Plazza.dir/shared/American.cpp.o: ../shared/includes/BasePizza.h
+
+CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/Fantasia.cpp
+CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/includes/BasePizza.h
+CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/includes/Fantasia.h
+
+CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/Margarita.cpp
+CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/includes/BasePizza.h
+CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/includes/Margarita.h
+
+CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/Regina.cpp
+CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/includes/BasePizza.h
+CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/includes/Regina.h
+
