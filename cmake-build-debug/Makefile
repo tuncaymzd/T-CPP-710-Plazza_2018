@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza
+CMAKE_SOURCE_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug
+CMAKE_BINARY_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,18 +150,138 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+shared/American.o: shared/American.cpp.o
+
+.PHONY : shared/American.o
+
+# target to build an object file
+shared/American.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/American.cpp.o
+.PHONY : shared/American.cpp.o
+
+shared/American.i: shared/American.cpp.i
+
+.PHONY : shared/American.i
+
+# target to preprocess a source file
+shared/American.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/American.cpp.i
+.PHONY : shared/American.cpp.i
+
+shared/American.s: shared/American.cpp.s
+
+.PHONY : shared/American.s
+
+# target to generate assembly for a file
+shared/American.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/American.cpp.s
+.PHONY : shared/American.cpp.s
+
+shared/Fantasia.o: shared/Fantasia.cpp.o
+
+.PHONY : shared/Fantasia.o
+
+# target to build an object file
+shared/Fantasia.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o
+.PHONY : shared/Fantasia.cpp.o
+
+shared/Fantasia.i: shared/Fantasia.cpp.i
+
+.PHONY : shared/Fantasia.i
+
+# target to preprocess a source file
+shared/Fantasia.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Fantasia.cpp.i
+.PHONY : shared/Fantasia.cpp.i
+
+shared/Fantasia.s: shared/Fantasia.cpp.s
+
+.PHONY : shared/Fantasia.s
+
+# target to generate assembly for a file
+shared/Fantasia.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Fantasia.cpp.s
+.PHONY : shared/Fantasia.cpp.s
+
+shared/Margarita.o: shared/Margarita.cpp.o
+
+.PHONY : shared/Margarita.o
+
+# target to build an object file
+shared/Margarita.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Margarita.cpp.o
+.PHONY : shared/Margarita.cpp.o
+
+shared/Margarita.i: shared/Margarita.cpp.i
+
+.PHONY : shared/Margarita.i
+
+# target to preprocess a source file
+shared/Margarita.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Margarita.cpp.i
+.PHONY : shared/Margarita.cpp.i
+
+shared/Margarita.s: shared/Margarita.cpp.s
+
+.PHONY : shared/Margarita.s
+
+# target to generate assembly for a file
+shared/Margarita.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Margarita.cpp.s
+.PHONY : shared/Margarita.cpp.s
+
+shared/Regina.o: shared/Regina.cpp.o
+
+.PHONY : shared/Regina.o
+
+# target to build an object file
+shared/Regina.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Regina.cpp.o
+.PHONY : shared/Regina.cpp.o
+
+shared/Regina.i: shared/Regina.cpp.i
+
+.PHONY : shared/Regina.i
+
+# target to preprocess a source file
+shared/Regina.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Regina.cpp.i
+.PHONY : shared/Regina.cpp.i
+
+shared/Regina.s: shared/Regina.cpp.s
+
+.PHONY : shared/Regina.s
+
+# target to generate assembly for a file
+shared/Regina.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Regina.cpp.s
+.PHONY : shared/Regina.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... Plazza"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... shared/American.o"
+	@echo "... shared/American.i"
+	@echo "... shared/American.s"
+	@echo "... shared/Fantasia.o"
+	@echo "... shared/Fantasia.i"
+	@echo "... shared/Fantasia.s"
+	@echo "... shared/Margarita.o"
+	@echo "... shared/Margarita.i"
+	@echo "... shared/Margarita.s"
+	@echo "... shared/Regina.o"
+	@echo "... shared/Regina.i"
+	@echo "... shared/Regina.s"
 .PHONY : help
 
 
