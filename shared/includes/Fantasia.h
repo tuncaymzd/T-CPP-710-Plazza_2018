@@ -6,7 +6,7 @@
 #define PLAZZA_FANTASIA_H
 
 
-#include "includes/BasePizza.h"
+#include "BasePizza.h"
 
 class Fantasia : BasePizza {
 

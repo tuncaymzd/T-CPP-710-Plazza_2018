@@ -93,9 +93,6 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.h">
-			<Option target="Plazza"/>
-		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp">
 			<Option target="Plazza"/>
 		</Unit>
@@ -106,6 +103,9 @@
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/BasePizza.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Fantasia.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Margarita.h">
