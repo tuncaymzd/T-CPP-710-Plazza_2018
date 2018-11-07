@@ -47,6 +47,9 @@ int ParserConfig::indexOptions(std::string option) {
 
 
 void ParserConfig::removeOptions(std::string option) {
+    if (this->isOption(option) == 0) {
+        throw Error("It's impossible to remove element if is not option");
+    }
     this->options.erase(this->options.begin() + indexOptions(option));
 }
 
@@ -84,8 +87,10 @@ bool ParserConfig::isNumber(std::string elem) {
             break;
         }
     }
+    if (elem.size() == 0) {
+        valid = false;
+    }
     return valid;
-
 }
 
 void ParserConfig::initParser(int argc, char* argv[]) {
