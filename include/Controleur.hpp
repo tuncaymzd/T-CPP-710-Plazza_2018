@@ -5,22 +5,20 @@
 #ifndef PLAZZA_CONTROLEUR_HPP
 #define PLAZZA_CONTROLEUR_HPP
 
-#include <queue>
 #include <iostream>
-#include "../shared/Command.cpp"
-#include "../ParserConfig.cpp"
 #include <fstream>
-#include "../Error.cpp"
+#include <queue>
 #include <tuple>
-#include <get>
-
-//inclure parser.cpp
+#include "Error.h"
+#include "ParserConfig.h"
+#include "Parser.hpp"
+#include "../shared/includes/Command.h"
 
 class Controleur {
 public:
-    static int baseTime;
-    static int numbersOfKitchens;
-    static int numbersOfCooker;
+    //static int baseTime;
+    //static int numbersOfKitchens;
+    //static int numbersOfCooker;
 
     Controleur();
     ~Controleur();

@@ -101,3 +101,7 @@ std::tuple<std::string, std::string, int> Parser::parse(std::string line)
         return std::make_tuple(pizzaName, pizzaSize, pizzaQty);
     }
 }
+
+Parser::~Parser() {
+
+}

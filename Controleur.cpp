@@ -36,17 +36,21 @@ void Controleur::readFile(std::string file) {
     if (!this->file.is_open()) {
         throw Error("This file can not be opened");
     }
-    while (this->file.getline(file, line)) {
-        cmd = this->pars.parse(line);
+    while (getline(this->file, line)) {
+        cmd = this->pars->parse(line);
         pizzaName = std::get<0>(cmd);
         size = std::get<1>(cmd);
         nb = std::get<2>(cmd);
         while (i < nb) {
-            this->addCommand(new Command(pizzaName, size));
+            this->addCommand(*new Command(pizzaName, size));
             i++;
         }
         i = 0;
     }
 
     this->file.close();
+}
+
+Controleur::~Controleur() {
+
 }

@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "../Parser.cpp"
+#include "../include/Parser.hpp"
 
 TEST_CASE( "verify_isValidInt", "[Parser:isValidInt]" ) {
     Parser *pars = new Parser();

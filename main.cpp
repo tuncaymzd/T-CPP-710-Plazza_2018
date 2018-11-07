@@ -1,24 +1,15 @@
 #include <iostream>
-#include "ParserConfig.cpp"
+#include "include/Parser.hpp"
 
 int main(int argc, char* argv[])
 {
-    ParserConfig *pars = new ParserConfig();
-    pars->getOptions();
+    Parser *pars = new Parser();
     std::cout << "\n";
     try {
-        pars->initParser(argc, argv);
+        pars->parse("Margarita L 4");
     }
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-    std::cout << "\n";
-    std::cout << pars->getBaseTime();
-    std::cout << "\n";
-    std::cout << pars->getNumbersOfCookers();
-    std::cout << "\n";
-    std::cout << pars->getNumbersOfKitchens();
-    std::cout << "\n";
-    pars->getOptions();
     return 0;
 }

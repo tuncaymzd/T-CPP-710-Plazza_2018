@@ -9,3 +9,7 @@ Command::Command(std::string name, std::string size) {
     this->size = size;
 }
 
+Command::~Command() {
+
+}
+

@@ -125,3 +125,7 @@ void ParserConfig::initParser(int argc, char* argv[]) {
         i = i + 2;
     }
 }
+
+ParserConfig::~ParserConfig() {
+
+}

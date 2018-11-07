@@ -10,13 +10,11 @@
 
 #include <iostream>
 #include <vector>
-#include <fstream>
 #include <tuple>
-#include "../Error.cpp"
+#include "Error.h"
 
 class Parser {
 public:
-    std::ifstream files;
 
     Parser();
     ~Parser();
