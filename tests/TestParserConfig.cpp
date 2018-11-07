@@ -1,4 +1,4 @@
-s#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "../ParserConfig.cpp"
 
@@ -43,4 +43,14 @@ TEST_CASE( "verify_removeOptions", "[ParserConfig::removeOptions]" ) {
     res.push_back("-c");
     pars->removeOptions("--cooker");
     REQUIRE(pars->getOptions() == res);
+    REQUIRE_THROWS(pars->removeOptions("anfk"));
+}
+
+TEST_CASE( "verify_is_number", "[ParserConfig::isNumber(std::string elem)]" ) {
+    ParserConfig *pars = new ParserConfig();
+    REQUIRE(pars->isNumber("123") == 1);
+    REQUIRE(pars->isNumber("123.0") == 0);
+    REQUIRE(pars->isNumber("dslj") == 0);
+    REQUIRE(pars->isNumber("") == 0);
+    REQUIRE(pars->isNumber("12345678") == 1);
 }
