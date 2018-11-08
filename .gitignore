@@ -35,6 +35,8 @@
 # CMake
 /.idea/
 /cmake-build-debug/
+/latex/
+/html/
 cmake-build-*/
 
 # Mongo Explorer plugin
