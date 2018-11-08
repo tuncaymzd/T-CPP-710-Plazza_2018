@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Plazza.dir/main.cpp.o"
+  "CMakeFiles/Plazza.dir/ParserConfig.cpp.o"
+  "CMakeFiles/Plazza.dir/Parser.cpp.o"
+  "CMakeFiles/Plazza.dir/Error.cpp.o"
+  "CMakeFiles/Plazza.dir/shared/Command.cpp.o"
+  "CMakeFiles/Plazza.dir/Controleur.cpp.o"
   "CMakeFiles/Plazza.dir/shared/Margarita.cpp.o"
   "CMakeFiles/Plazza.dir/shared/Regina.cpp.o"
   "CMakeFiles/Plazza.dir/shared/American.cpp.o"

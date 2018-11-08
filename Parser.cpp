@@ -9,8 +9,14 @@
 
 Parser::Parser()
 {
-    this->pizza = {"Margarita", "Regina", "American", "Fantasia"};
-    this->size = {"M", "L", "XL"};
+    this->pizza.push_back("Margarita");
+    this->pizza.push_back("Regina");
+    this->pizza.push_back("American");
+    this->pizza.push_back("Fantasia");
+
+    this->size.push_back("M");
+    this->size.push_back("L");
+    this->size.push_back("XL");
 }
 
 std::vector<std::string> Parser::explode(std::string str, char c)

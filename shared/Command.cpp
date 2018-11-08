@@ -13,3 +13,11 @@ Command::~Command() {
 
 }
 
+const std::string &Command::getNamePizza() const {
+    return namePizza;
+}
+
+const std::string &Command::getSize() const {
+    return size;
+}
+

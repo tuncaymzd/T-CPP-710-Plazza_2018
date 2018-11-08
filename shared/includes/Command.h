@@ -12,6 +12,9 @@ public:
     Command(std::string name, std::string size);
     ~Command();
 
+    const std::string &getNamePizza() const;
+    const std::string &getSize() const;
+
 private:
     std::string namePizza; /*!< represent name of p izza*/
     std::string size; /*!< represent size of pizza  */

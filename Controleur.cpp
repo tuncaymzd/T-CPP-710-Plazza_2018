@@ -4,13 +4,17 @@
 
 #include "include/Controleur.hpp"
 
-Controleur::Controleur() {
+Controleur::Controleur(int argc, char* argv[]) {
     this->parserConf = new ParserConfig();
     this->pars = new Parser();
+    this->parserConf->initParser(argc, argv);
+    this->baseTime = this->parserConf->getBaseTime();
+    this->numbersOfKitchens = this->parserConf->getNumbersOfKitchens();
+    this->numbersOfCooker = this->parserConf->getNumbersOfCookers();
 }
 
 void Controleur::addCommand(Command c) {
-    this->theCommands.push(c);
+    this->theCommands.emplace(c);
 }
 
 bool Controleur::theCommandsIsEmpty() {
@@ -25,6 +29,7 @@ void Controleur::deleteCommand() {
 }
 
 void Controleur::readFile(std::string file) {
+    std::fstream infile;
     std::string line;
     std::tuple<std::string, std::string, int> cmd;
     std::string pizzaName;
@@ -32,23 +37,27 @@ void Controleur::readFile(std::string file) {
     int nb = 0;
     int i = 0;
 
-    this->file.open(file);
-    if (!this->file.is_open()) {
+    infile.open(file);
+    if (!infile.is_open()) {
         throw Error("This file can not be opened");
     }
-    while (getline(this->file, line)) {
+    while (getline(infile, line)) {
         cmd = this->pars->parse(line);
         pizzaName = std::get<0>(cmd);
+        std::cout << pizzaName;
         size = std::get<1>(cmd);
+        std::cout << size;
         nb = std::get<2>(cmd);
+        std::cout << nb;
+        std::cout << "\n";
         while (i < nb) {
             this->addCommand(*new Command(pizzaName, size));
             i++;
         }
         i = 0;
     }
-
-    this->file.close();
+    std::cout << this->theCommands.size();
+    infile.close();
 }
 
 Controleur::~Controleur() {

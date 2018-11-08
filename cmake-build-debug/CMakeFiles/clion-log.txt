@@ -1,4 +1,4 @@
-/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug
+-- Build files have been written to: /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug

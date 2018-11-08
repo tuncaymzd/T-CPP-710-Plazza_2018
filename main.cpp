@@ -1,12 +1,12 @@
 #include <iostream>
-#include "include/Parser.hpp"
+#include "include/Controleur.hpp"
 
 int main(int argc, char* argv[])
 {
-    Parser *pars = new Parser();
-    std::cout << "\n";
+    Controleur *control = new Controleur(argc, argv);
+
     try {
-        pars->parse("Margarita L 4");
+        control->readFile(argv[1]);
     }
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;

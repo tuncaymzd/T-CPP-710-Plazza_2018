@@ -1,4 +1,4 @@
-#define CATCH_CONFIG_MAIN
+//#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "../include/Parser.hpp"
 
@@ -62,4 +62,3 @@ TEST_CASE( "verify_parse", "[Parser::parse]" ) {
     REQUIRE(pars->parse("Margarita 1") == tmp);
     REQUIRE_THROWS(pars->parse("Margaritamfmf"));
 }
-

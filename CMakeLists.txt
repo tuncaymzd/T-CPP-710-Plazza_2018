@@ -23,7 +23,4 @@ add_executable(Plazza
         shared/American.cpp
         shared/includes/American.h
         shared/Fantasia.cpp
-        shared/includes/Fantasia.h
-        tests/catch.hpp
-        tests/TestParser.cpp
-        tests/TestParserConfig.cpp)
+        shared/includes/Fantasia.h)

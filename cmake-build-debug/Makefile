@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018
+CMAKE_SOURCE_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,114 @@ Plazza: cmake_check_build_system
 Plazza/fast:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/build
 .PHONY : Plazza/fast
+
+Controleur.o: Controleur.cpp.o
+
+.PHONY : Controleur.o
+
+# target to build an object file
+Controleur.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Controleur.cpp.o
+.PHONY : Controleur.cpp.o
+
+Controleur.i: Controleur.cpp.i
+
+.PHONY : Controleur.i
+
+# target to preprocess a source file
+Controleur.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Controleur.cpp.i
+.PHONY : Controleur.cpp.i
+
+Controleur.s: Controleur.cpp.s
+
+.PHONY : Controleur.s
+
+# target to generate assembly for a file
+Controleur.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Controleur.cpp.s
+.PHONY : Controleur.cpp.s
+
+Error.o: Error.cpp.o
+
+.PHONY : Error.o
+
+# target to build an object file
+Error.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Error.cpp.o
+.PHONY : Error.cpp.o
+
+Error.i: Error.cpp.i
+
+.PHONY : Error.i
+
+# target to preprocess a source file
+Error.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Error.cpp.i
+.PHONY : Error.cpp.i
+
+Error.s: Error.cpp.s
+
+.PHONY : Error.s
+
+# target to generate assembly for a file
+Error.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Error.cpp.s
+.PHONY : Error.cpp.s
+
+Parser.o: Parser.cpp.o
+
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
+ParserConfig.o: ParserConfig.cpp.o
+
+.PHONY : ParserConfig.o
+
+# target to build an object file
+ParserConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/ParserConfig.cpp.o
+.PHONY : ParserConfig.cpp.o
+
+ParserConfig.i: ParserConfig.cpp.i
+
+.PHONY : ParserConfig.i
+
+# target to preprocess a source file
+ParserConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/ParserConfig.cpp.i
+.PHONY : ParserConfig.cpp.i
+
+ParserConfig.s: ParserConfig.cpp.s
+
+.PHONY : ParserConfig.s
+
+# target to generate assembly for a file
+ParserConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/ParserConfig.cpp.s
+.PHONY : ParserConfig.cpp.s
 
 main.o: main.cpp.o
 
@@ -176,6 +284,33 @@ shared/American.s: shared/American.cpp.s
 shared/American.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/American.cpp.s
 .PHONY : shared/American.cpp.s
+
+shared/Command.o: shared/Command.cpp.o
+
+.PHONY : shared/Command.o
+
+# target to build an object file
+shared/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Command.cpp.o
+.PHONY : shared/Command.cpp.o
+
+shared/Command.i: shared/Command.cpp.i
+
+.PHONY : shared/Command.i
+
+# target to preprocess a source file
+shared/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Command.cpp.i
+.PHONY : shared/Command.cpp.i
+
+shared/Command.s: shared/Command.cpp.s
+
+.PHONY : shared/Command.s
+
+# target to generate assembly for a file
+shared/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Command.cpp.s
+.PHONY : shared/Command.cpp.s
 
 shared/Fantasia.o: shared/Fantasia.cpp.o
 
@@ -264,15 +399,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... Plazza"
+	@echo "... Controleur.o"
+	@echo "... Controleur.i"
+	@echo "... Controleur.s"
+	@echo "... Error.o"
+	@echo "... Error.i"
+	@echo "... Error.s"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
+	@echo "... ParserConfig.o"
+	@echo "... ParserConfig.i"
+	@echo "... ParserConfig.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... shared/American.o"
 	@echo "... shared/American.i"
 	@echo "... shared/American.s"
+	@echo "... shared/Command.o"
+	@echo "... shared/Command.i"
+	@echo "... shared/Command.s"
 	@echo "... shared/Fantasia.o"
 	@echo "... shared/Fantasia.i"
 	@echo "... shared/Fantasia.s"

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018
+CMAKE_SOURCE_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Plazza.dir/depend.make
@@ -59,72 +59,142 @@ include CMakeFiles/Plazza.dir/flags.make
 
 CMakeFiles/Plazza.dir/main.cpp.o: CMakeFiles/Plazza.dir/flags.make
 CMakeFiles/Plazza.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Plazza.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/main.cpp.o -c /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Plazza.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/main.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/main.cpp
 
 CMakeFiles/Plazza.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/main.cpp > CMakeFiles/Plazza.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/main.cpp > CMakeFiles/Plazza.dir/main.cpp.i
 
 CMakeFiles/Plazza.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/main.cpp -o CMakeFiles/Plazza.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/main.cpp -o CMakeFiles/Plazza.dir/main.cpp.s
+
+CMakeFiles/Plazza.dir/ParserConfig.cpp.o: CMakeFiles/Plazza.dir/flags.make
+CMakeFiles/Plazza.dir/ParserConfig.cpp.o: ../ParserConfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Plazza.dir/ParserConfig.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/ParserConfig.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/ParserConfig.cpp
+
+CMakeFiles/Plazza.dir/ParserConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/ParserConfig.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/ParserConfig.cpp > CMakeFiles/Plazza.dir/ParserConfig.cpp.i
+
+CMakeFiles/Plazza.dir/ParserConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/ParserConfig.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/ParserConfig.cpp -o CMakeFiles/Plazza.dir/ParserConfig.cpp.s
+
+CMakeFiles/Plazza.dir/Parser.cpp.o: CMakeFiles/Plazza.dir/flags.make
+CMakeFiles/Plazza.dir/Parser.cpp.o: ../Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Plazza.dir/Parser.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/Parser.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Parser.cpp
+
+CMakeFiles/Plazza.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/Parser.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Parser.cpp > CMakeFiles/Plazza.dir/Parser.cpp.i
+
+CMakeFiles/Plazza.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/Parser.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Parser.cpp -o CMakeFiles/Plazza.dir/Parser.cpp.s
+
+CMakeFiles/Plazza.dir/Error.cpp.o: CMakeFiles/Plazza.dir/flags.make
+CMakeFiles/Plazza.dir/Error.cpp.o: ../Error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Plazza.dir/Error.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/Error.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Error.cpp
+
+CMakeFiles/Plazza.dir/Error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/Error.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Error.cpp > CMakeFiles/Plazza.dir/Error.cpp.i
+
+CMakeFiles/Plazza.dir/Error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/Error.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Error.cpp -o CMakeFiles/Plazza.dir/Error.cpp.s
+
+CMakeFiles/Plazza.dir/shared/Command.cpp.o: CMakeFiles/Plazza.dir/flags.make
+CMakeFiles/Plazza.dir/shared/Command.cpp.o: ../shared/Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Plazza.dir/shared/Command.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Command.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Command.cpp
+
+CMakeFiles/Plazza.dir/shared/Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/shared/Command.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Command.cpp > CMakeFiles/Plazza.dir/shared/Command.cpp.i
+
+CMakeFiles/Plazza.dir/shared/Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/shared/Command.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Command.cpp -o CMakeFiles/Plazza.dir/shared/Command.cpp.s
+
+CMakeFiles/Plazza.dir/Controleur.cpp.o: CMakeFiles/Plazza.dir/flags.make
+CMakeFiles/Plazza.dir/Controleur.cpp.o: ../Controleur.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Plazza.dir/Controleur.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/Controleur.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Controleur.cpp
+
+CMakeFiles/Plazza.dir/Controleur.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/Controleur.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Controleur.cpp > CMakeFiles/Plazza.dir/Controleur.cpp.i
+
+CMakeFiles/Plazza.dir/Controleur.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/Controleur.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Controleur.cpp -o CMakeFiles/Plazza.dir/Controleur.cpp.s
 
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: CMakeFiles/Plazza.dir/flags.make
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/Margarita.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Plazza.dir/shared/Margarita.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Margarita.cpp.o -c /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Plazza.dir/shared/Margarita.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Margarita.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Margarita.cpp
 
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/shared/Margarita.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp > CMakeFiles/Plazza.dir/shared/Margarita.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Margarita.cpp > CMakeFiles/Plazza.dir/shared/Margarita.cpp.i
 
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/shared/Margarita.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp -o CMakeFiles/Plazza.dir/shared/Margarita.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Margarita.cpp -o CMakeFiles/Plazza.dir/shared/Margarita.cpp.s
 
 CMakeFiles/Plazza.dir/shared/Regina.cpp.o: CMakeFiles/Plazza.dir/flags.make
 CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/Regina.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Plazza.dir/shared/Regina.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Regina.cpp.o -c /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Regina.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Plazza.dir/shared/Regina.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Regina.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Regina.cpp
 
 CMakeFiles/Plazza.dir/shared/Regina.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/shared/Regina.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Regina.cpp > CMakeFiles/Plazza.dir/shared/Regina.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Regina.cpp > CMakeFiles/Plazza.dir/shared/Regina.cpp.i
 
 CMakeFiles/Plazza.dir/shared/Regina.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/shared/Regina.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Regina.cpp -o CMakeFiles/Plazza.dir/shared/Regina.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Regina.cpp -o CMakeFiles/Plazza.dir/shared/Regina.cpp.s
 
 CMakeFiles/Plazza.dir/shared/American.cpp.o: CMakeFiles/Plazza.dir/flags.make
 CMakeFiles/Plazza.dir/shared/American.cpp.o: ../shared/American.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Plazza.dir/shared/American.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/American.cpp.o -c /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/American.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Plazza.dir/shared/American.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/American.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/American.cpp
 
 CMakeFiles/Plazza.dir/shared/American.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/shared/American.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/American.cpp > CMakeFiles/Plazza.dir/shared/American.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/American.cpp > CMakeFiles/Plazza.dir/shared/American.cpp.i
 
 CMakeFiles/Plazza.dir/shared/American.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/shared/American.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/American.cpp -o CMakeFiles/Plazza.dir/shared/American.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/American.cpp -o CMakeFiles/Plazza.dir/shared/American.cpp.s
 
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: CMakeFiles/Plazza.dir/flags.make
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/Fantasia.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o -c /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o -c /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Fantasia.cpp
 
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plazza.dir/shared/Fantasia.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp > CMakeFiles/Plazza.dir/shared/Fantasia.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Fantasia.cpp > CMakeFiles/Plazza.dir/shared/Fantasia.cpp.i
 
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plazza.dir/shared/Fantasia.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp -o CMakeFiles/Plazza.dir/shared/Fantasia.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Fantasia.cpp -o CMakeFiles/Plazza.dir/shared/Fantasia.cpp.s
 
 # Object files for target Plazza
 Plazza_OBJECTS = \
 "CMakeFiles/Plazza.dir/main.cpp.o" \
+"CMakeFiles/Plazza.dir/ParserConfig.cpp.o" \
+"CMakeFiles/Plazza.dir/Parser.cpp.o" \
+"CMakeFiles/Plazza.dir/Error.cpp.o" \
+"CMakeFiles/Plazza.dir/shared/Command.cpp.o" \
+"CMakeFiles/Plazza.dir/Controleur.cpp.o" \
 "CMakeFiles/Plazza.dir/shared/Margarita.cpp.o" \
 "CMakeFiles/Plazza.dir/shared/Regina.cpp.o" \
 "CMakeFiles/Plazza.dir/shared/American.cpp.o" \
@@ -134,13 +204,18 @@ Plazza_OBJECTS = \
 Plazza_EXTERNAL_OBJECTS =
 
 Plazza: CMakeFiles/Plazza.dir/main.cpp.o
+Plazza: CMakeFiles/Plazza.dir/ParserConfig.cpp.o
+Plazza: CMakeFiles/Plazza.dir/Parser.cpp.o
+Plazza: CMakeFiles/Plazza.dir/Error.cpp.o
+Plazza: CMakeFiles/Plazza.dir/shared/Command.cpp.o
+Plazza: CMakeFiles/Plazza.dir/Controleur.cpp.o
 Plazza: CMakeFiles/Plazza.dir/shared/Margarita.cpp.o
 Plazza: CMakeFiles/Plazza.dir/shared/Regina.cpp.o
 Plazza: CMakeFiles/Plazza.dir/shared/American.cpp.o
 Plazza: CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o
 Plazza: CMakeFiles/Plazza.dir/build.make
 Plazza: CMakeFiles/Plazza.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Plazza"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Plazza"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Plazza.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +228,6 @@ CMakeFiles/Plazza.dir/clean:
 .PHONY : CMakeFiles/Plazza.dir/clean
 
 CMakeFiles/Plazza.dir/depend:
-	cd /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018 /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018 /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles/Plazza.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles/Plazza.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Plazza.dir/depend
 

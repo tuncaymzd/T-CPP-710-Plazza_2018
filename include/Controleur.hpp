@@ -16,11 +16,8 @@
 
 class Controleur {
 public:
-    //static int baseTime;
-    //static int numbersOfKitchens;
-    //static int numbersOfCooker;
 
-    Controleur();
+    Controleur(int argc, char* argv[]);
     ~Controleur();
 
     void readFile(std::string file);
@@ -34,9 +31,11 @@ public:
 
 private:
     std::queue<Command> theCommands;
-    std::fstream file;
     ParserConfig *parserConf;
     Parser *pars;
+    int baseTime = 0;
+    int numbersOfKitchens = 0;
+    int numbersOfCooker = 0;
 };
 
 
