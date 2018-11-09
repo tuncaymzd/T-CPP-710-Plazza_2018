@@ -8,139 +8,164 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug"/>
+				<Option working_dir="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug"/>
+				<Option working_dir="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Plazza">
-				<Option output="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Plazza" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug"/>
+				<Option output="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Plazza" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plazza"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plazza"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Plazza/fast">
-				<Option output="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Plazza" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug"/>
+				<Option output="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Plazza" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plazza/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plazza/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Controleur.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Controleur.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Error.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Error.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/Parser.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Parser.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/ParserConfig.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/ParserConfig.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/include/Controleur.hpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Controleur.hpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/include/Error.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Error.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/include/Parser.hpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Parser.hpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/include/ParserConfig.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/ParserConfig.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/main.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/main.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/American.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/American.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Command.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Command.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Fantasia.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Margarita.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/Regina.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Regina.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/American.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Timer.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/BasePizza.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/TimerCompletedListener.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/Command.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/American.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/Fantasia.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/BasePizza.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/Margarita.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Command.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/shared/includes/Regina.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Delegates.h">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/CMakeLists.txt">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Enums.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Fantasia.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/ITimerCompletedListener.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Margarita.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Regina.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Timer.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/TimerCompletedListener.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

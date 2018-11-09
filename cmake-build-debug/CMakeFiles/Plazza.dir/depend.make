@@ -45,3 +45,15 @@ CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/Regina.cpp
 CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/includes/BasePizza.h
 CMakeFiles/Plazza.dir/shared/Regina.cpp.o: ../shared/includes/Regina.h
 
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/Timer.cpp
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/includes/Delegates.h
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/includes/Enums.h
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/includes/ITimerCompletedListener.h
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/includes/Timer.h
+CMakeFiles/Plazza.dir/shared/Timer.cpp.o: ../shared/includes/TimerCompletedListener.h
+
+CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o: ../shared/TimerCompletedListener.cpp
+CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o: ../shared/includes/Enums.h
+CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o: ../shared/includes/ITimerCompletedListener.h
+CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o: ../shared/includes/TimerCompletedListener.h
+

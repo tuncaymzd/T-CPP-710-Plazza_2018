@@ -23,4 +23,11 @@ add_executable(Plazza
         shared/American.cpp
         shared/includes/American.h
         shared/Fantasia.cpp
-        shared/includes/Fantasia.h)
+        shared/includes/Fantasia.h
+        shared/Timer.cpp
+        shared/includes/Timer.h
+        shared/includes/ITimerCompletedListener.h
+        shared/includes/Enums.h
+        shared/TimerCompletedListener.cpp
+        shared/includes/TimerCompletedListener.h
+        shared/includes/Delegates.h)

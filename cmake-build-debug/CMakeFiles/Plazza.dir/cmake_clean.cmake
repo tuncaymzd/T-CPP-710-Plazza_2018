@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Plazza.dir/shared/Regina.cpp.o"
   "CMakeFiles/Plazza.dir/shared/American.cpp.o"
   "CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o"
+  "CMakeFiles/Plazza.dir/shared/Timer.cpp.o"
+  "CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o"
   "Plazza.pdb"
   "Plazza"
 )

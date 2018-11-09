@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza
+CMAKE_SOURCE_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug
+CMAKE_BINARY_DIR = /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tuncay/Desktop/T-CPP-710-Plazza_2018/Plazza/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -393,14 +393,68 @@ shared/Regina.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Regina.cpp.s
 .PHONY : shared/Regina.cpp.s
 
+shared/Timer.o: shared/Timer.cpp.o
+
+.PHONY : shared/Timer.o
+
+# target to build an object file
+shared/Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Timer.cpp.o
+.PHONY : shared/Timer.cpp.o
+
+shared/Timer.i: shared/Timer.cpp.i
+
+.PHONY : shared/Timer.i
+
+# target to preprocess a source file
+shared/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Timer.cpp.i
+.PHONY : shared/Timer.cpp.i
+
+shared/Timer.s: shared/Timer.cpp.s
+
+.PHONY : shared/Timer.s
+
+# target to generate assembly for a file
+shared/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Timer.cpp.s
+.PHONY : shared/Timer.cpp.s
+
+shared/TimerCompletedListener.o: shared/TimerCompletedListener.cpp.o
+
+.PHONY : shared/TimerCompletedListener.o
+
+# target to build an object file
+shared/TimerCompletedListener.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o
+.PHONY : shared/TimerCompletedListener.cpp.o
+
+shared/TimerCompletedListener.i: shared/TimerCompletedListener.cpp.i
+
+.PHONY : shared/TimerCompletedListener.i
+
+# target to preprocess a source file
+shared/TimerCompletedListener.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.i
+.PHONY : shared/TimerCompletedListener.cpp.i
+
+shared/TimerCompletedListener.s: shared/TimerCompletedListener.cpp.s
+
+.PHONY : shared/TimerCompletedListener.s
+
+# target to generate assembly for a file
+shared/TimerCompletedListener.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.s
+.PHONY : shared/TimerCompletedListener.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... Plazza"
 	@echo "... Controleur.o"
 	@echo "... Controleur.i"
@@ -432,6 +486,12 @@ help:
 	@echo "... shared/Regina.o"
 	@echo "... shared/Regina.i"
 	@echo "... shared/Regina.s"
+	@echo "... shared/Timer.o"
+	@echo "... shared/Timer.i"
+	@echo "... shared/Timer.s"
+	@echo "... shared/TimerCompletedListener.o"
+	@echo "... shared/TimerCompletedListener.i"
+	@echo "... shared/TimerCompletedListener.s"
 .PHONY : help
 
 
