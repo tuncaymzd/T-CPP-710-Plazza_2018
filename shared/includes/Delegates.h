@@ -13,3 +13,4 @@
 using std::string;
 
 typedef std::function<void(int, string)> timerCompletedEventHandler;
+typedef std::function<void(string)> notifierEventHandler;

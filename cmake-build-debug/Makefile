@@ -312,6 +312,33 @@ shared/Command.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Command.cpp.s
 .PHONY : shared/Command.cpp.s
 
+shared/Cook.o: shared/Cook.cpp.o
+
+.PHONY : shared/Cook.o
+
+# target to build an object file
+shared/Cook.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.o
+.PHONY : shared/Cook.cpp.o
+
+shared/Cook.i: shared/Cook.cpp.i
+
+.PHONY : shared/Cook.i
+
+# target to preprocess a source file
+shared/Cook.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.i
+.PHONY : shared/Cook.cpp.i
+
+shared/Cook.s: shared/Cook.cpp.s
+
+.PHONY : shared/Cook.s
+
+# target to generate assembly for a file
+shared/Cook.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.s
+.PHONY : shared/Cook.cpp.s
+
 shared/Fantasia.o: shared/Fantasia.cpp.o
 
 .PHONY : shared/Fantasia.o
@@ -477,6 +504,9 @@ help:
 	@echo "... shared/Command.o"
 	@echo "... shared/Command.i"
 	@echo "... shared/Command.s"
+	@echo "... shared/Cook.o"
+	@echo "... shared/Cook.i"
+	@echo "... shared/Cook.s"
 	@echo "... shared/Fantasia.o"
 	@echo "... shared/Fantasia.i"
 	@echo "... shared/Fantasia.s"

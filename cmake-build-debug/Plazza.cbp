@@ -117,6 +117,12 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Command.cpp">
 			<Option target="Plazza"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cook.cpp">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cook.h">
+			<Option target="Plazza"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">
 			<Option target="Plazza"/>
 		</Unit>
@@ -148,6 +154,9 @@
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Fantasia.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/ICook.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/ITimerCompletedListener.h">
