@@ -31,4 +31,4 @@ add_executable(Plazza
         shared/includes/Enums.h
         shared/TimerCompletedListener.cpp
         shared/includes/TimerCompletedListener.h
-        shared/includes/Delegates.h shared/includes/ICook.h shared/Cooker.cpp shared/Cooker.h)
+        shared/includes/Delegates.h shared/includes/ICook.h shared/Cooker.cpp include/Cooker.h)
