@@ -13,11 +13,18 @@
 #include "ParserConfig.h"
 #include "Parser.hpp"
 #include "../shared/includes/Command.h"
+#include "../shared/includes/Delegates.h"
+#include <thread>
+#include <mutex>
+
+using std::string;
+
 
 class Controleur {
 public:
 
     Controleur(int argc, char* argv[]);
+    Controleur(int argc, char* argv[], notifierEventHandler notif);
     ~Controleur();
 
     void readFile(std::string file);
@@ -36,7 +43,7 @@ private:
     int baseTime = 0;
     int numbersOfKitchens = 0;
     int numbersOfCooker = 0;
+    notifierEventHandler onNotify;
 };
-
 
 #endif //PLAZZA_CONTROLEUR_HPP

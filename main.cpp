@@ -1,9 +1,20 @@
 #include <iostream>
 #include "include/Controleur.hpp"
 
+std::mutex logMutex;
+
+
+/// Log messages from underlying layers to the user.
+/// \param text system logs.
+void logNotification(string text) {
+    logMutex.lock();
+    std::cout << text << "\n";
+    logMutex.unlock();
+}
+
 int main(int argc, char* argv[])
 {
-    Controleur *control = new Controleur(argc, argv);
+    Controleur *control = new Controleur(argc, argv, &logNotification);
 
     try {
         control->readFile(argv[1]);
@@ -13,3 +24,4 @@ int main(int argc, char* argv[])
     }
     return 0;
 }
+

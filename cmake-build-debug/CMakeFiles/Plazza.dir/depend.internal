@@ -8,6 +8,7 @@ CMakeFiles/Plazza.dir/Controleur.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Parser.hpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/ParserConfig.h
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Command.h
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Delegates.h
 CMakeFiles/Plazza.dir/Error.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Error.cpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Error.h
@@ -26,6 +27,7 @@ CMakeFiles/Plazza.dir/main.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/ParserConfig.h
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/main.cpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Command.h
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Delegates.h
 CMakeFiles/Plazza.dir/shared/American.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/American.cpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/American.h
@@ -33,6 +35,12 @@ CMakeFiles/Plazza.dir/shared/American.cpp.o
 CMakeFiles/Plazza.dir/shared/Command.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Command.cpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Command.h
+CMakeFiles/Plazza.dir/shared/Cooker.cpp.o
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.cpp
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.h
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/BasePizza.h
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Delegates.h
+ /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/ICook.h
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp
  /home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/BasePizza.h

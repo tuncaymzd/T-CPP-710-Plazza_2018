@@ -13,7 +13,7 @@ using std::string;
 class Regina : BasePizza {
 
 public:
-    Regina(string size, long time) : BasePizza(size, time, 1){}
+    Regina(string size, long time) : BasePizza(size, time, 1, "Regina"){}
 };
 
 

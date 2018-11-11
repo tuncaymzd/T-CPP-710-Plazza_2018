@@ -312,32 +312,32 @@ shared/Command.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Command.cpp.s
 .PHONY : shared/Command.cpp.s
 
-shared/Cook.o: shared/Cook.cpp.o
+shared/Cooker.o: shared/Cooker.cpp.o
 
-.PHONY : shared/Cook.o
+.PHONY : shared/Cooker.o
 
 # target to build an object file
-shared/Cook.cpp.o:
-	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.o
-.PHONY : shared/Cook.cpp.o
+shared/Cooker.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cooker.cpp.o
+.PHONY : shared/Cooker.cpp.o
 
-shared/Cook.i: shared/Cook.cpp.i
+shared/Cooker.i: shared/Cooker.cpp.i
 
-.PHONY : shared/Cook.i
+.PHONY : shared/Cooker.i
 
 # target to preprocess a source file
-shared/Cook.cpp.i:
-	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.i
-.PHONY : shared/Cook.cpp.i
+shared/Cooker.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cooker.cpp.i
+.PHONY : shared/Cooker.cpp.i
 
-shared/Cook.s: shared/Cook.cpp.s
+shared/Cooker.s: shared/Cooker.cpp.s
 
-.PHONY : shared/Cook.s
+.PHONY : shared/Cooker.s
 
 # target to generate assembly for a file
-shared/Cook.cpp.s:
-	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cook.cpp.s
-.PHONY : shared/Cook.cpp.s
+shared/Cooker.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/shared/Cooker.cpp.s
+.PHONY : shared/Cooker.cpp.s
 
 shared/Fantasia.o: shared/Fantasia.cpp.o
 
@@ -504,9 +504,9 @@ help:
 	@echo "... shared/Command.o"
 	@echo "... shared/Command.i"
 	@echo "... shared/Command.s"
-	@echo "... shared/Cook.o"
-	@echo "... shared/Cook.i"
-	@echo "... shared/Cook.s"
+	@echo "... shared/Cooker.o"
+	@echo "... shared/Cooker.i"
+	@echo "... shared/Cooker.s"
 	@echo "... shared/Fantasia.o"
 	@echo "... shared/Fantasia.i"
 	@echo "... shared/Fantasia.s"

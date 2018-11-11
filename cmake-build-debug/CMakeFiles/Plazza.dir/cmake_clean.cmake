@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o"
   "CMakeFiles/Plazza.dir/shared/Timer.cpp.o"
   "CMakeFiles/Plazza.dir/shared/TimerCompletedListener.cpp.o"
-  "CMakeFiles/Plazza.dir/shared/Cook.cpp.o"
+  "CMakeFiles/Plazza.dir/shared/Cooker.cpp.o"
   "Plazza.pdb"
   "Plazza"
 )

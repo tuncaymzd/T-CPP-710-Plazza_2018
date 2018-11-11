@@ -11,7 +11,7 @@
 class American : BasePizza{
 
 public:
-    American(string size, long time) : BasePizza(size, time, 2.0){}
+    American(string size, long time) : BasePizza(size, time, 2.0, "American"){}
 };
 
 

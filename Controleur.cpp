@@ -63,3 +63,13 @@ void Controleur::readFile(std::string file) {
 Controleur::~Controleur() {
 
 }
+
+Controleur::Controleur(int argc, char **argv, notifierEventHandler notif) {
+    this->parserConf = new ParserConfig();
+    this->pars = new Parser();
+    this->parserConf->initParser(argc, argv);
+    this->baseTime = this->parserConf->getBaseTime();
+    this->numbersOfKitchens = this->parserConf->getNumbersOfKitchens();
+    this->numbersOfCooker = this->parserConf->getNumbersOfCookers();
+    this->onNotify = notif;
+}

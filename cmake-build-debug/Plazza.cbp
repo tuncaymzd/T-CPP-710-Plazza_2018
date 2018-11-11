@@ -117,10 +117,10 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Command.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cook.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cook.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">

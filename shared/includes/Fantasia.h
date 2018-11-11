@@ -11,7 +11,7 @@
 class Fantasia : BasePizza {
 
 public:
-    Fantasia(string size, long time) : BasePizza(size, time, 4.0){}
+    Fantasia(string size, long time) : BasePizza(size, time, 4.0, "Fantasia"){}
 };
 
 
