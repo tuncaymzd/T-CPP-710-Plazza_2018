@@ -99,6 +99,9 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Controleur.hpp">
 			<Option target="Plazza"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Cooker.h">
+			<Option target="Plazza"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Error.h">
 			<Option target="Plazza"/>
 		</Unit>
@@ -120,10 +123,13 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Cooker.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Fantasia.cpp">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Kitchen.cpp">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Kitchen.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp">
