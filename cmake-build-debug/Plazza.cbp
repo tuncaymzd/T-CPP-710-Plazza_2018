@@ -87,6 +87,9 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Controleur.cpp">
 			<Option target="Plazza"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Dispatcher.cpp">
+			<Option target="Plazza"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/Error.cpp">
 			<Option target="Plazza"/>
 		</Unit>
@@ -99,7 +102,7 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Controleur.hpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Cooker.h">
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Dispatcher.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/include/Error.h">
@@ -129,9 +132,6 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Kitchen.cpp">
 			<Option target="Plazza"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Kitchen.h">
-			<Option target="Plazza"/>
-		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/Margarita.cpp">
 			<Option target="Plazza"/>
 		</Unit>
@@ -153,6 +153,9 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Command.h">
 			<Option target="Plazza"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Cooker.h">
+			<Option target="Plazza"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Delegates.h">
 			<Option target="Plazza"/>
 		</Unit>
@@ -166,6 +169,9 @@
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/ITimerCompletedListener.h">
+			<Option target="Plazza"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Kitchen.h">
 			<Option target="Plazza"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/Plazza/Colaboration/T-CPP-710-Plazza_2018/shared/includes/Margarita.h">

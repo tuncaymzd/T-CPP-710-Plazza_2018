@@ -150,6 +150,33 @@ Controleur.cpp.s:
 	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Controleur.cpp.s
 .PHONY : Controleur.cpp.s
 
+Dispatcher.o: Dispatcher.cpp.o
+
+.PHONY : Dispatcher.o
+
+# target to build an object file
+Dispatcher.cpp.o:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Dispatcher.cpp.o
+.PHONY : Dispatcher.cpp.o
+
+Dispatcher.i: Dispatcher.cpp.i
+
+.PHONY : Dispatcher.i
+
+# target to preprocess a source file
+Dispatcher.cpp.i:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Dispatcher.cpp.i
+.PHONY : Dispatcher.cpp.i
+
+Dispatcher.s: Dispatcher.cpp.s
+
+.PHONY : Dispatcher.s
+
+# target to generate assembly for a file
+Dispatcher.cpp.s:
+	$(MAKE) -f CMakeFiles/Plazza.dir/build.make CMakeFiles/Plazza.dir/Dispatcher.cpp.s
+.PHONY : Dispatcher.cpp.s
+
 Error.o: Error.cpp.o
 
 .PHONY : Error.o
@@ -513,6 +540,9 @@ help:
 	@echo "... Controleur.o"
 	@echo "... Controleur.i"
 	@echo "... Controleur.s"
+	@echo "... Dispatcher.o"
+	@echo "... Dispatcher.i"
+	@echo "... Dispatcher.s"
 	@echo "... Error.o"
 	@echo "... Error.i"
 	@echo "... Error.s"

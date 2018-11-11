@@ -12,9 +12,11 @@ Kitchen::Kitchen() {
 }
 
 /// Add a new Cooker to this kitchen
+/// And set the kitchen in a ready position
 /// \param cook The cooking item
 void Kitchen::setCooker(ICook *cook) {
     this->cook = cook;
+    canStart = true;
 }
 
 /// Get the thread running condition to avoid deadlocks

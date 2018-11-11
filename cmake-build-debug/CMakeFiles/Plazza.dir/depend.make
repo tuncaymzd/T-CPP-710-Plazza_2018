@@ -9,6 +9,12 @@ CMakeFiles/Plazza.dir/Controleur.cpp.o: ../include/ParserConfig.h
 CMakeFiles/Plazza.dir/Controleur.cpp.o: ../shared/includes/Command.h
 CMakeFiles/Plazza.dir/Controleur.cpp.o: ../shared/includes/Delegates.h
 
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../Dispatcher.cpp
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../include/Dispatcher.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Command.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/ICook.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Kitchen.h
+
 CMakeFiles/Plazza.dir/Error.cpp.o: ../Error.cpp
 CMakeFiles/Plazza.dir/Error.cpp.o: ../include/Error.h
 
@@ -36,14 +42,18 @@ CMakeFiles/Plazza.dir/shared/Command.cpp.o: ../shared/Command.cpp
 CMakeFiles/Plazza.dir/shared/Command.cpp.o: ../shared/includes/Command.h
 
 CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/Cooker.cpp
-CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/Cooker.h
 CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/includes/BasePizza.h
+CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/includes/Cooker.h
 CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/includes/Delegates.h
 CMakeFiles/Plazza.dir/shared/Cooker.cpp.o: ../shared/includes/ICook.h
 
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/Fantasia.cpp
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/includes/BasePizza.h
 CMakeFiles/Plazza.dir/shared/Fantasia.cpp.o: ../shared/includes/Fantasia.h
+
+CMakeFiles/Plazza.dir/shared/Kitchen.cpp.o: ../shared/Kitchen.cpp
+CMakeFiles/Plazza.dir/shared/Kitchen.cpp.o: ../shared/includes/ICook.h
+CMakeFiles/Plazza.dir/shared/Kitchen.cpp.o: ../shared/includes/Kitchen.h
 
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/Margarita.cpp
 CMakeFiles/Plazza.dir/shared/Margarita.cpp.o: ../shared/includes/BasePizza.h

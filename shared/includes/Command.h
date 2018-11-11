@@ -9,6 +9,7 @@
 
 class Command {
 public:
+    Command(){}
     Command(std::string name, std::string size);
     ~Command();
 

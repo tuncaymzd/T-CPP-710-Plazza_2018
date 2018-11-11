@@ -6,9 +6,9 @@
 #define PLAZZA_COOK_H
 
 
-#include "../shared/includes/ICook.h"
-#include "../shared/includes/Delegates.h"
-#include "../shared/includes/BasePizza.h"
+#include "ICook.h"
+#include "Delegates.h"
+#include "BasePizza.h"
 
 class Cooker : public ICook{
 

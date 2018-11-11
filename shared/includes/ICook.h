@@ -1,7 +1,7 @@
 //
 // Created by damien on 10/11/18.
 //
-
+#pragma once
 #ifndef PLAZZA_ICOOK_H
 #define PLAZZA_ICOOK_H
 
