@@ -30,5 +30,4 @@ public:
     static void addKitchen(Kitchen* kitchen);
 };
 
-
 #endif //PLAZZA_DISPATCHER_H

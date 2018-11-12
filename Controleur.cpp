@@ -73,3 +73,23 @@ Controleur::Controleur(int argc, char **argv, notifierEventHandler notif) {
     this->numbersOfCooker = this->parserConf->getNumbersOfCookers();
     this->onNotify = notif;
 }
+
+const std::queue<Command> &Controleur::getTheCommands() const {
+    return theCommands;
+}
+
+int Controleur::getBaseTime() const {
+    return baseTime;
+}
+
+int Controleur::getNumbersOfKitchens() const {
+    return numbersOfKitchens;
+}
+
+int Controleur::getNumbersOfCooker() const {
+    return numbersOfCooker;
+}
+
+Command Controleur::getFirstCommand() const {
+    return theCommands.front();
+}

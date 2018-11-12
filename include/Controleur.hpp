@@ -35,6 +35,15 @@ public:
 
     bool theCommandsIsEmpty();
 
+    const std::queue<Command> &getTheCommands() const;
+
+    int getBaseTime() const;
+
+    int getNumbersOfKitchens() const;
+
+    int getNumbersOfCooker() const;
+
+    Command getFirstCommand() const;
 
 private:
     std::queue<Command> theCommands;
