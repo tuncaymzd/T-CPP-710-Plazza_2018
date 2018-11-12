@@ -3,13 +3,16 @@
 //
 
 #include "include/Dispatcher.h"
-
+#include "shared/includes/Cooker.h"
+#include "shared/includes/Fantasia.h"
+#include <algorithm>
 
 std::vector<std::thread*> Dispatcher::threadPool;
 std::vector<Kitchen*> Dispatcher::kitchenPool;
 std::queue<ICook*> Dispatcher::cookQueue;
 std::mutex Dispatcher::cookMutex;
 std::mutex Dispatcher::kitchenMutex;
+
 
 bool Dispatcher::startCookingProcess() {
     return false;
@@ -27,12 +30,24 @@ bool Dispatcher::stop() {
 
 void Dispatcher::initialize(int numberOfKitchens, std::queue<Command> pizzaCommands) {
     Command pCommand;
+    string pizzaName =  "";
 
     for(int i = 0; i < numberOfKitchens; i++) {
         kitchenPool.push_back(new Kitchen());
     }
     while(!pizzaCommands.empty()) {
         pCommand = pizzaCommands.front();
-        //cookQueue.push(new Cooker(new BasePizza(pCommand)))
+        pizzaName = pCommand.getNamePizza();
+        std::transform(pizzaName.begin(),
+                       pizzaName.end(), pizzaName.begin(), ::tolower);
+        if(pizzaName == "fantasia") {
+            //cookQueue.push(new Fantasia(pCommand.getSize(), ))
+        } else if(pizzaName == "margarita") {
+
+        } else if(pizzaName == "regina") {
+
+        } else if(pizzaName == "american") {
+
+        }
     }
 }
