@@ -40,3 +40,12 @@ void Kitchen::run() {
         }
     }
 }
+
+void Kitchen::hangMeUp() {
+    onNotify("Kitchen : "+std::to_string(myProcessesID)+" is hanging up.");
+}
+
+void Kitchen::killMe() {
+    onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.");
+    exit(0);
+}

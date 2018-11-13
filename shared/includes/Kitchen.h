@@ -8,6 +8,7 @@
 #include <condition_variable>
 #include <mutex>
 #include "ICook.h"
+#include "Delegates.h"
 
 class Kitchen {
 
@@ -17,9 +18,17 @@ class Kitchen {
     bool canStart;
     bool cooking;
     ICook* cook;
+    static int myProcessesID;
+    static int parentProcessesID;
+    static notifierEventHandler onNotify;
 
 public:
     Kitchen();
+    static void killMe();
+    static void hangMeUp();
+    static void setOnNotify(notifierEventHandler notif){
+        onNotify = notif;
+    }
     void run();
     void stop();
     void setCooker(ICook* cook);
