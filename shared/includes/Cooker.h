@@ -21,5 +21,4 @@ public:
     void finish();
 };
 
-
 #endif //PLAZZA_COOK_H

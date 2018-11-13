@@ -11,7 +11,11 @@ CMakeFiles/Plazza.dir/Controleur.cpp.o: ../shared/includes/Delegates.h
 
 CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../Dispatcher.cpp
 CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../include/Dispatcher.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/BasePizza.h
 CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Command.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Cooker.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Delegates.h
+CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Fantasia.h
 CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/ICook.h
 CMakeFiles/Plazza.dir/Dispatcher.cpp.o: ../shared/includes/Kitchen.h
 

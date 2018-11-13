@@ -8,11 +8,10 @@
 
 #include "BasePizza.h"
 
-class Fantasia : BasePizza {
+class Fantasia : public BasePizza {
 
 public:
     Fantasia(string size, long time) : BasePizza(size, time, 4.0, "Fantasia"){}
 };
-
 
 #endif //PLAZZA_FANTASIA_H

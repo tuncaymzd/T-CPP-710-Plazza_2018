@@ -5,6 +5,8 @@
 #include "include/Dispatcher.h"
 #include "shared/includes/Cooker.h"
 #include "shared/includes/Fantasia.h"
+#include "shared/includes/Margarita.h"
+#include "shared/includes/Regina.h"
 #include <algorithm>
 
 std::vector<std::thread*> Dispatcher::threadPool;
@@ -28,7 +30,7 @@ bool Dispatcher::stop() {
     return false;
 }
 
-void Dispatcher::initialize(int numberOfKitchens, std::queue<Command> pizzaCommands) {
+void Dispatcher::initialize(int numberOfKitchens, long time, std::queue<Command> pizzaCommands) {
     Command pCommand;
     string pizzaName =  "";
 
@@ -41,13 +43,13 @@ void Dispatcher::initialize(int numberOfKitchens, std::queue<Command> pizzaComma
         std::transform(pizzaName.begin(),
                        pizzaName.end(), pizzaName.begin(), ::tolower);
         if(pizzaName == "fantasia") {
-            //cookQueue.push(new Fantasia(pCommand.getSize(), ))
+            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
         } else if(pizzaName == "margarita") {
-
+            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time)));
         } else if(pizzaName == "regina") {
-
+            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time)));
         } else if(pizzaName == "american") {
-
+            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
         }
     }
 }

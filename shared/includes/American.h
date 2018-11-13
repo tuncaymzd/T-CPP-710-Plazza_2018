@@ -8,7 +8,7 @@
 
 #include "BasePizza.h"
 
-class American : BasePizza{
+class American : public BasePizza{
 
 public:
     American(string size, long time) : BasePizza(size, time, 2.0, "American"){}

@@ -10,7 +10,7 @@
 
 using std::string;
 
-class Regina : BasePizza {
+class Regina : public BasePizza {
 
 public:
     Regina(string size, long time) : BasePizza(size, time, 1, "Regina"){}

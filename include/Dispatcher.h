@@ -24,7 +24,7 @@ class Dispatcher {
     static std::mutex kitchenMutex;
 
 public:
-    static void initialize(int numberOfKitchens, std::queue<Command> pizzaCommands);
+    static void initialize(int numberOfKitchens, long time, std::queue<Command> pizzaCommands);
     static bool startCookingProcess();
     static bool stop();
     static void addKitchen(Kitchen* kitchen);

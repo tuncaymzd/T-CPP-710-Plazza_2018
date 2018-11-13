@@ -8,7 +8,7 @@
 #include "BasePizza.h"
 using std::string;
 
-class Margarita : BasePizza
+class Margarita : public BasePizza
 {
 public:
     Margarita(string size, long time) : BasePizza(size, time, 1.5, "Margarita"){}

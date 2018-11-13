@@ -26,5 +26,4 @@ public:
     void getCondition(std::condition_variable* &cv);
 };
 
-
 #endif //PLAZZA_KITCHEN_H
