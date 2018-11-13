@@ -9,30 +9,24 @@
 #include <mutex>
 #include "ICook.h"
 #include "Delegates.h"
+#include <queue>
+#include <thread>
 
 class Kitchen {
 
-    std::unique_lock<std::mutex> uniqueLock;
-    std::condition_variable threadCv;
-    std::mutex mutX;
-    bool canStart;
-    bool cooking;
-    ICook* cook;
+    static bool cooking;
     static int myProcessesID;
     static int parentProcessesID;
     static notifierEventHandler onNotify;
+    static std::queue<ICook*> cookQueue;
+    static std::vector<std::thread*> threadPool;
 
 public:
-    Kitchen();
     static void killMe();
     static void hangMeUp();
-    static void setOnNotify(notifierEventHandler notif){
-        onNotify = notif;
-    }
-    void run();
-    void stop();
-    void setCooker(ICook* cook);
-    void getCondition(std::condition_variable* &cv);
+    static void setOnNotify(notifierEventHandler notif);
+    static void run();
+    static void setCooker(std::queue<ICook*> cookQ);
 };
 
 #endif //PLAZZA_KITCHEN_H

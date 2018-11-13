@@ -4,42 +4,21 @@
 
 #include "includes/Kitchen.h"
 
-///Construct the kitchen
-Kitchen::Kitchen() {
-    cooking = true;
-    canStart = false;
-    uniqueLock = std::unique_lock<std::mutex>(mutX);
-}
-
-/// Add a new Cooker to this kitchen
-/// And set the kitchen in a ready position
-/// \param cook The cooking item
-void Kitchen::setCooker(ICook *cook) {
-    this->cook = cook;
-    canStart = true;
-}
-
-/// Get the thread running condition to avoid deadlocks
-/// \param cv outer condition variable passed by reference
-void Kitchen::getCondition(std::condition_variable *&cv) {
-    cv = &(this)->threadCv;
-}
-
-///Stop cooking the pizza
-void Kitchen::stop() {
-    cooking = false;
-}
+bool Kitchen::cooking;
+int Kitchen::myProcessesID;
+int Kitchen::parentProcessesID;
+notifierEventHandler Kitchen::onNotify;
+std::queue<ICook*> Kitchen::cookQueue;
+std::vector<std::thread*> Kitchen::threadPool;
 
 ///Execute the cooking process
 void Kitchen::run() {
-    while(cooking) {
-        if(canStart) {
-            canStart = false;
-            cook->cook();
-            cook->finish();
-        }
-    }
 }
+
+void Kitchen::setOnNotify(notifierEventHandler notif) {
+    onNotify = notif;
+}
+
 
 void Kitchen::hangMeUp() {
     onNotify("Kitchen : "+std::to_string(myProcessesID)+" is hanging up.");
@@ -48,4 +27,8 @@ void Kitchen::hangMeUp() {
 void Kitchen::killMe() {
     onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.");
     exit(0);
+}
+
+void Kitchen::setCooker(std::queue<ICook *> cookQ) {
+    cookQueue = cookQ;
 }
