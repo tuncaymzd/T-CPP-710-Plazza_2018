@@ -90,6 +90,9 @@ void Kitchen::Initialize(long time, std::queue<Command> pizzaCommands, int cmdNu
     }
 }
 
+/// Stating which Id belongs to this process and the parent's
+/// \param parentId the parent's pid
+/// \param myId this process' PID
 void Kitchen::initializeProcessIds(int parentId, int myId) {
     parentProcessesID = parentId;
     myId;
