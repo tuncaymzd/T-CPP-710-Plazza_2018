@@ -2,54 +2,75 @@
 // Created by damien on 11/11/18.
 //
 
+#include <unistd.h>
 #include "include/Dispatcher.h"
+#include "shared/includes/Kitchen.h"
 #include "shared/includes/Cooker.h"
 #include "shared/includes/Fantasia.h"
 #include "shared/includes/Margarita.h"
 #include "shared/includes/Regina.h"
-#include <algorithm>
 
-std::vector<std::thread*> Dispatcher::threadPool;
-std::vector<Kitchen*> Dispatcher::kitchenPool;
-std::queue<ICook*> Dispatcher::cookQueue;
-std::mutex Dispatcher::cookMutex;
-std::mutex Dispatcher::kitchenMutex;
+int Dispatcher::nbKitchens;
+int Dispatcher::nbCookers;
+int Dispatcher::basetime;
+std::queue<Command> Dispatcher::theCommands;
+std::queue<std::queue<Command>> Dispatcher::theCommandsSplit;
 
-
-bool Dispatcher::startCookingProcess() {
-    return false;
+void Dispatcher::initialize(int numberOfKitchens, int numberOfCookers, int time, std::queue<Command> pizzaCommands) {
+    nbCookers = numberOfCookers;
+    nbKitchens = numberOfKitchens;
+    basetime = time;
+    theCommands = pizzaCommands;
 }
 
-/// Add the kitchen
-/// \param kitchen
-void Dispatcher::addKitchen(Kitchen *kitchen) {
-
+Command Dispatcher::myPop() {
+    Command res;
+    res = theCommands.front();
+    theCommands.pop();
+    return res;
 }
 
-bool Dispatcher::stop() {
-    return false;
+std::queue<Command> Dispatcher::myPopQueue() {
+    std::queue<Command> res;
+    res = theCommandsSplit.front();
+    theCommandsSplit.pop();
+    return res;
 }
 
-void Dispatcher::initialize(int numberOfKitchens, long time, std::queue<Command> pizzaCommands) {
-    Command pCommand;
-    string pizzaName =  "";
-
-    for(int i = 0; i < numberOfKitchens; i++) {
-        kitchenPool.push_back(new Kitchen());
+void Dispatcher::splitTheCommands() {
+    std::queue<std::queue<Command>> res;
+    std::queue<Command> tmp;
+    int i = 0;
+    int x = 0;
+    int elem = theCommands.size();
+    while (i < elem) {
+        while (x < nbCookers) {
+            if (!theCommands.empty()) {
+                tmp.emplace(myPop());
+                x++;
+            } else {
+                break;
+            }
+        }
+        res.emplace(tmp);
+        i += x;
+        x = 0;
     }
-    while(!pizzaCommands.empty()) {
-        pCommand = pizzaCommands.front();
-        pizzaName = pCommand.getNamePizza();
-        std::transform(pizzaName.begin(),
-                       pizzaName.end(), pizzaName.begin(), ::tolower);
-        if(pizzaName == "fantasia") {
-            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
-        } else if(pizzaName == "margarita") {
-            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time)));
-        } else if(pizzaName == "regina") {
-            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time)));
-        } else if(pizzaName == "american") {
-            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
+    theCommandsSplit = res;
+}
+
+void Dispatcher::createKitchens() {
+    int tmp = theCommandsSplit.size();
+    pid_t pid = -1;
+    if (nbKitchens > tmp) {
+        tmp = nbKitchens;
+    }
+    for (int i = 0; i < tmp; i++) {
+        if (pid != 0)
+            pid = fork();
+        if (pid == 0) {
+            Kitchen::Initialize((long)basetime, myPopQueue(), nbCookers);
+            break;
         }
     }
 }

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "include/Controleur.hpp"
+#include "include/Dispatcher.h"
 
 std::mutex logMutex;
 
@@ -27,6 +28,9 @@ int main(int argc, char* argv[])
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
     }
+    Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
+    Dispatcher::splitTheCommands();
+    Dispatcher::createKitchens();
     /// End Init
     return 0;
 }
