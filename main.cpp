@@ -1,6 +1,10 @@
 #include <iostream>
 #include "include/Controleur.hpp"
+<<<<<<< HEAD
+#include "shared/includes/Kitchen.h"
+=======
 #include "include/Dispatcher.h"
+>>>>>>> eacfafca1ba873d7de9643c8c367adb0758f6747
 
 std::mutex logMutex;
 
@@ -23,14 +27,18 @@ int main(int argc, char* argv[])
     std::queue<Command> listOfCommands;
     try {
         control->readFile(argv[1]);
-        listOfCommands = control->getTheCommands();
+        auto cmds = control->getTheCommands();
+        Kitchen::setOnNotify(logNotification);
+        Kitchen::Initialize(1000, cmds, cmds.size());
+        Kitchen::run();
+        //listOfCommands = control->getTheCommands();
     }
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-    Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
-    Dispatcher::splitTheCommands();
-    Dispatcher::createKitchens();
+//    Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
+//    Dispatcher::splitTheCommands();
+//    Dispatcher::createKitchens();
     /// End Init
     return 0;
 }

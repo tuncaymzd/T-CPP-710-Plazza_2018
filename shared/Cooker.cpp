@@ -17,5 +17,5 @@ void Cooker::cook() {
 void Cooker::finish() {
     onNotify("Pizza: " + pizza.getName() + " " + " " + pizza.getSize() +
              " has finished Cooking!\n");
-    Kitchen::threadTerminated();
+    Kitchen::threadTerminated(threadIndex);
 }
