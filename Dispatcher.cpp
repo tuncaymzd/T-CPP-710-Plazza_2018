@@ -15,6 +15,7 @@ int Dispatcher::nbCookers;
 int Dispatcher::basetime;
 std::queue<Command> Dispatcher::theCommands;
 std::queue<std::queue<Command>> Dispatcher::theCommandsSplit;
+notifierEventHandler Dispatcher::onNotify;
 
 void Dispatcher::initialize(int numberOfKitchens, int numberOfCookers, int time, std::queue<Command> pizzaCommands) {
     nbCookers = numberOfCookers;
@@ -74,4 +75,8 @@ void Dispatcher::createKitchens() {
             break;
         }
     }
+}
+
+void Dispatcher::setOnNotify(notifierEventHandler notif) {
+    onNotify = notif;
 }

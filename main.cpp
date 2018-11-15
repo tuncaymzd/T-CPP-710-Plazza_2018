@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
     try {
         control->readFile(argv[1]);
         auto cmds = control->getTheCommands();
-        Kitchen::setOnNotify(logNotification);
+        Dispatcher::setOnNotify(logNotification);
         Kitchen::Initialize(1000, cmds, cmds.size());
         Kitchen::run();
         //listOfCommands = control->getTheCommands();

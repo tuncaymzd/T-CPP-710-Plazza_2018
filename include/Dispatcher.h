@@ -30,9 +30,7 @@ public:
     static int basetime;
     static std::queue<Command> theCommands;
     static std::queue<std::queue<Command>> theCommandsSplit;
-    static void setOnNotify(notifierEventHandler notif){
-        onNotify = notif;
-    }
+    static void setOnNotify(notifierEventHandler notif);
 };
 
 
