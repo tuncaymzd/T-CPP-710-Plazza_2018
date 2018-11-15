@@ -64,12 +64,13 @@ void Dispatcher::createKitchens() {
     pid_t pid = -1;
     if (nbKitchens > tmp) {
         tmp = nbKitchens;
-
+    }
     for (int i = 0; i < tmp; i++) {
-        if (pid != 0)
+        if (pid != 0) {
             pid = fork();
+        }
         if (pid == 0) {
-            Kitchen::Initialize((long)basetime, myPopQueue(), nbCookers);
+            Kitchen::Initialize((long) basetime, myPopQueue(), nbCookers);
             break;
         }
     }
