@@ -71,7 +71,10 @@ void Dispatcher::createKitchens() {
             pid = fork();
         }
         if (pid == 0) {
+            Kitchen::setOnNotify(onNotify);
             Kitchen::Initialize((long) basetime, myPopQueue(), nbCookers);
+            Kitchen::initializeProcessIds(getppid(), getpid());
+            Kitchen::run();
             break;
         }
     }

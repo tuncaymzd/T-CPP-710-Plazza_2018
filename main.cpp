@@ -23,18 +23,19 @@ int main(int argc, char* argv[])
     std::queue<Command> listOfCommands;
     try {
         control->readFile(argv[1]);
-        auto cmds = control->getTheCommands();
+//        Kitchen::setOnNotify(logNotification);
+//        auto cmds = control->getTheCommands();
+//        Kitchen::Initialize(1000, cmds, cmds.size());
+//        Kitchen::run();
+        listOfCommands = control->getTheCommands();
+        Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
+        Dispatcher::splitTheCommands();
         Dispatcher::setOnNotify(logNotification);
-        Kitchen::Initialize(1000, cmds, cmds.size());
-        Kitchen::run();
-        //listOfCommands = control->getTheCommands();
+        Dispatcher::createKitchens();
     }
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-//    Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
-//    Dispatcher::splitTheCommands();
-//    Dispatcher::createKitchens();
     /// End Init
     return 0;
 }
