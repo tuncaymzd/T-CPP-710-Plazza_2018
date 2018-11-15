@@ -22,8 +22,9 @@ long Kitchen::time;
 void Kitchen::run() {
     ICook *currentCooker;
     std::thread *th;
+    int size = cookQueue.size();
 
-    for (int i = 0; i < cookQueue.size(); ++i) {
+    for (int i = 0; i < size; ++i) {
         currentCooker = cookQueue.front();
         cookQueue.pop();
         th = new std::thread(&ICook::cook, currentCooker);
