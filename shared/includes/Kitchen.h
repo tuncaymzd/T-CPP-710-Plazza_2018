@@ -30,7 +30,7 @@ public:
     static void run();
     static void Initialize(long time, std::queue<Command> pizzaCommands, int cmdNum);
     static void setCookers(std::queue<ICook*> cookQ);
-    static void threadTerminated(int thIndex);
+    static bool threadTerminated(int thIndex);
     static void initializeProcessIds(int parentId, int myId);
     static void notifyFinished();
 };

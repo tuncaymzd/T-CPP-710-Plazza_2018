@@ -57,7 +57,7 @@ void Kitchen::setCookers(std::queue<ICook *> cookQ) {
 
 ///Called when a thread is terminated, and
 /// If there is no more work, exit the process.
-void Kitchen::threadTerminated(int thindex) {
+bool Kitchen::threadTerminated(int thindex) {
     cookerMutex.lock();
     if(threadPool.empty()) {
         for (int i = 0; i < threadPool.size(); ++i) {
@@ -66,7 +66,9 @@ void Kitchen::threadTerminated(int thindex) {
         killMe();
     } else {
         cookerMutex.unlock();
+        return true;
     }
+    return false;
 }
 
 ///Notify to parent process that this process has finished working.
