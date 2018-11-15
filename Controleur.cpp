@@ -44,19 +44,14 @@ void Controleur::readFile(std::string file) {
     while (getline(infile, line)) {
         cmd = this->pars->parse(line);
         pizzaName = std::get<0>(cmd);
-        std::cout << pizzaName;
         size = std::get<1>(cmd);
-        std::cout << size;
         nb = std::get<2>(cmd);
-        std::cout << nb;
-        std::cout << "\n";
         while (i < nb) {
             this->addCommand(*new Command(pizzaName, size));
             i++;
         }
         i = 0;
     }
-    std::cout << this->theCommands.size();
     infile.close();
 }
 

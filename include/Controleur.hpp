@@ -45,6 +45,8 @@ public:
 
     Command getFirstCommand() const;
 
+    int numbersOfKitchensToCreate();
+
 private:
     std::queue<Command> theCommands;
     ParserConfig *parserConf;

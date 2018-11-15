@@ -17,17 +17,19 @@
 #include "../shared/includes/Command.h"
 
 class Dispatcher {
-    static std::vector<std::thread*> threadPool;
-    static std::vector<Kitchen*> kitchenPool;
-    static std::queue<ICook*> cookQueue;
-    static std::mutex cookMutex;
-    static std::mutex kitchenMutex;
-
 public:
-    static void initialize(int numberOfKitchens, long time, std::queue<Command> pizzaCommands);
-    static bool startCookingProcess();
-    static bool stop();
-    static void addKitchen(Kitchen* kitchen);
+    static void initialize(int numberOfKitchens, int numberOfCookers, int time, std::queue<Command> pizzaCommands);
+    static Command myPop();
+    static std::queue<Command> myPopQueue();
+    static void splitTheCommands();
+    static void createKitchens();
+
+    static int nbKitchens;
+    static int nbCookers;
+    static int basetime;
+    static std::queue<Command> theCommands;
+    static std::queue<std::queue<Command>> theCommandsSplit;
 };
+
 
 #endif //PLAZZA_DISPATCHER_H
