@@ -23,12 +23,16 @@ public:
     static std::queue<Command> myPopQueue();
     static void splitTheCommands();
     static void createKitchens();
+    static notifierEventHandler onNotify;
 
     static int nbKitchens;
     static int nbCookers;
     static int basetime;
     static std::queue<Command> theCommands;
     static std::queue<std::queue<Command>> theCommandsSplit;
+    static void setOnNotify(notifierEventHandler notif){
+        onNotify = notif;
+    }
 };
 
 
