@@ -28,6 +28,8 @@ void Kitchen::run() {
         cookQueue.pop();
         th = new std::thread(&ICook::cook, currentCooker);
         threadPool.push_back(th);
+        th->join();
+        //std::this_thread::sleep_for (std::chrono::milliseconds(2000));
     }
 }
 
@@ -76,7 +78,7 @@ void Kitchen::Initialize(long time, std::queue<Command> pizzaCommands, int cmdNu
     Command pCommand;
     string pizzaName = "";
 
-    for(int i = 0; i < pizzaCommands.size(); i++)
+    for(int i = 0; i < cmdNum; i++)
     {
         pCommand = pizzaCommands.front();
         pizzaName = pCommand.getNamePizza();

@@ -19,3 +19,7 @@ void Cooker::finish() {
              " has finished Cooking!\n");
     Kitchen::threadTerminated(threadIndex);
 }
+
+void Cooker::getConditionVariable(std::condition_variable *&c) {
+    c = &(this)->cv;
+}

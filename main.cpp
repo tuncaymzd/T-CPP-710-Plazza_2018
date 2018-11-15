@@ -1,10 +1,7 @@
 #include <iostream>
 #include "include/Controleur.hpp"
-<<<<<<< HEAD
 #include "shared/includes/Kitchen.h"
-=======
 #include "include/Dispatcher.h"
->>>>>>> eacfafca1ba873d7de9643c8c367adb0758f6747
 
 std::mutex logMutex;
 
