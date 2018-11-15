@@ -1,5 +1,6 @@
 #include <iostream>
 #include "include/Controleur.hpp"
+#include "shared/includes/Kitchen.h"
 
 std::mutex logMutex;
 
@@ -18,6 +19,10 @@ int main(int argc, char* argv[])
 
     try {
         control->readFile(argv[1]);
+        auto cmds = control->getTheCommands();
+        Kitchen::setOnNotify(logNotification);
+        Kitchen::Initialize(1000, cmds, cmds.size());
+        Kitchen::run();
     }
     catch (const std::exception& e) {
         std::cout << e.what() << std::endl;

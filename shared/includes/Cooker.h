@@ -14,9 +14,10 @@ class Cooker : public ICook{
 
     notifierEventHandler onNotify;
     BasePizza pizza;
+    int threadIndex;
 
 public:
-    Cooker(BasePizza pizza) : pizza(pizza){};
+    Cooker(BasePizza pizza, int thi, notifierEventHandler onNotif) : onNotify(onNotif) , pizza(pizza), threadIndex(thi){};
     void cook();
     void finish();
 };

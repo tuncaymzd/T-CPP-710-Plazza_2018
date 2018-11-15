@@ -54,9 +54,12 @@ void Kitchen::setCookers(std::queue<ICook *> cookQ) {
 
 ///Called when a thread is terminated, and
 /// If there is no more work, exit the process.
-void Kitchen::threadTerminated() {
+void Kitchen::threadTerminated(int thindex) {
     cookerMutex.lock();
     if(threadPool.empty()) {
+        for (int i = 0; i < threadPool.size(); ++i) {
+            threadPool[i]->join();
+        }
         killMe();
     } else {
         cookerMutex.unlock();
@@ -73,20 +76,22 @@ void Kitchen::Initialize(long time, std::queue<Command> pizzaCommands, int cmdNu
     Command pCommand;
     string pizzaName = "";
 
-    while (!pizzaCommands.empty()) {
+    for(int i = 0; i < pizzaCommands.size(); i++)
+    {
         pCommand = pizzaCommands.front();
         pizzaName = pCommand.getNamePizza();
 //        std::transform(pizzaName.begin(),
 //                       pizzaName.end(), pizzaName.begin(), ::tolower);
         if (pizzaName == "Fantasia") {
-            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
+            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time), i, onNotify));
         } else if (pizzaName == "Margarita") {
-            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time)));
+            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time), i, onNotify));
         } else if (pizzaName == "Regina") {
-            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time)));
+            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time), i, onNotify));
         } else if (pizzaName == "American") {
-            cookQueue.push(new Cooker(*new American(pCommand.getSize(), time)));
+            cookQueue.push(new Cooker(*new American(pCommand.getSize(), time), i, onNotify));
         }
+        pizzaCommands.pop();
     }
 }
 
@@ -95,5 +100,6 @@ void Kitchen::Initialize(long time, std::queue<Command> pizzaCommands, int cmdNu
 /// \param myId this process' PID
 void Kitchen::initializeProcessIds(int parentId, int myId) {
     parentProcessesID = parentId;
+    myProcessesID = myId;
     myId;
 }

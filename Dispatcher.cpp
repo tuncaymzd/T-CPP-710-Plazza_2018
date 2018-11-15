@@ -37,19 +37,19 @@ void Dispatcher::initialize(int numberOfKitchens, long time, std::queue<Command>
     for(int i = 0; i < numberOfKitchens; i++) {
         kitchenPool.push_back(new Kitchen());
     }
-    while(!pizzaCommands.empty()) {
-        pCommand = pizzaCommands.front();
-        pizzaName = pCommand.getNamePizza();
-        std::transform(pizzaName.begin(),
-                       pizzaName.end(), pizzaName.begin(), ::tolower);
-        if(pizzaName == "fantasia") {
-            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
-        } else if(pizzaName == "margarita") {
-            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time)));
-        } else if(pizzaName == "regina") {
-            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time)));
-        } else if(pizzaName == "american") {
-            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
-        }
-    }
+//    while(!pizzaCommands.empty()) {
+//        pCommand = pizzaCommands.front();
+//        pizzaName = pCommand.getNamePizza();
+//        std::transform(pizzaName.begin(),
+//                       pizzaName.end(), pizzaName.begin(), ::tolower);
+//        if(pizzaName == "fantasia") {
+//            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
+//        } else if(pizzaName == "margarita") {
+//            cookQueue.push(new Cooker(*new Margarita(pCommand.getSize(), time)));
+//        } else if(pizzaName == "regina") {
+//            cookQueue.push(new Cooker(*new Regina(pCommand.getSize(), time)));
+//        } else if(pizzaName == "american") {
+//            cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time)));
+//        }
+    //}
 }
