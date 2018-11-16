@@ -15,6 +15,7 @@ int Dispatcher::nbCookers;
 int Dispatcher::basetime;
 std::queue<Command> Dispatcher::theCommands;
 std::queue<std::queue<Command>> Dispatcher::theCommandsSplit;
+notifierEventHandler Dispatcher::onNotify;
 
 void Dispatcher::initialize(int numberOfKitchens, int numberOfCookers, int time, std::queue<Command> pizzaCommands) {
     nbCookers = numberOfCookers;
@@ -53,6 +54,9 @@ void Dispatcher::splitTheCommands() {
             }
         }
         res.emplace(tmp);
+        while(!tmp.empty()){
+            tmp.pop();
+        }
         i += x;
         x = 0;
     }
@@ -66,12 +70,23 @@ void Dispatcher::createKitchens() {
         tmp = nbKitchens;
     }
     for (int i = 0; i < tmp; i++) {
+        std::queue<Command> c = myPopQueue();
         if (pid != 0) {
             pid = fork();
         }
+
         if (pid == 0) {
-            Kitchen::Initialize((long) basetime, myPopQueue(), nbCookers);
+            std::cout << getpid() << std::endl;
+            Kitchen::setOnNotify(onNotify);
+            Kitchen::Initialize((long) basetime, c, nbCookers);
+            Kitchen::initializeProcessIds(getppid(), getpid());
+            Kitchen::run();
             break;
         }
+        wait(NULL);
     }
+}
+
+void Dispatcher::setOnNotify(notifierEventHandler notif) {
+    onNotify = notif;
 }
