@@ -43,6 +43,12 @@ public:
 
     int getNumbersOfCooker() const;
 
+    void setBaseTime(int baseTime);
+
+    void setNumbersOfKitchens(int numbersOfKitchens);
+
+    void setNumbersOfCooker(int numbersOfCooker);
+
     Command getFirstCommand() const;
 
     int numbersOfKitchensToCreate();

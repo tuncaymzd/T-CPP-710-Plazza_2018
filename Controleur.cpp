@@ -88,3 +88,15 @@ int Controleur::getNumbersOfCooker() const {
 Command Controleur::getFirstCommand() const {
     return theCommands.front();
 }
+
+void Controleur::setBaseTime(int baseTime) {
+    Controleur::baseTime = baseTime;
+}
+
+void Controleur::setNumbersOfKitchens(int numbersOfKitchens) {
+    Controleur::numbersOfKitchens = numbersOfKitchens;
+}
+
+void Controleur::setNumbersOfCooker(int numbersOfCooker) {
+    Controleur::numbersOfCooker = numbersOfCooker;
+}
