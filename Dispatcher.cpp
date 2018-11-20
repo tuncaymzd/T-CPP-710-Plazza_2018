@@ -1,8 +1,5 @@
-//
-// Created by damien on 11/11/18.
-//
-
 #include <unistd.h>
+#include <wait.h>
 #include "include/Dispatcher.h"
 #include "shared/includes/Kitchen.h"
 #include "shared/includes/Cooker.h"
@@ -54,6 +51,9 @@ void Dispatcher::splitTheCommands() {
             }
         }
         res.emplace(tmp);
+        while(!tmp.empty()){
+            tmp.pop();
+        }
         i += x;
         x = 0;
     }
@@ -67,16 +67,20 @@ void Dispatcher::createKitchens() {
         tmp = nbKitchens;
     }
     for (int i = 0; i < tmp; i++) {
+        std::queue<Command> c = myPopQueue();
         if (pid != 0) {
             pid = fork();
         }
+
         if (pid == 0) {
+            std::cout << "Kitchen :" << getpid() << " Is cooking." << std::endl;
             Kitchen::setOnNotify(onNotify);
-            Kitchen::Initialize((long) basetime, myPopQueue(), nbCookers);
+            Kitchen::Initialize((long) basetime, c, nbCookers);
             Kitchen::initializeProcessIds(getppid(), getpid());
             Kitchen::run();
             break;
         }
+        wait(NULL);
     }
 }
 
