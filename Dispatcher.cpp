@@ -1,7 +1,3 @@
-//
-// Created by damien on 11/11/18.
-//
-
 #include <unistd.h>
 #include "include/Dispatcher.h"
 #include "shared/includes/Kitchen.h"
@@ -76,7 +72,7 @@ void Dispatcher::createKitchens() {
         }
 
         if (pid == 0) {
-            std::cout << getpid() << std::endl;
+            std::cout << "Kitchen :" << getpid() << " Is cooking." << std::endl;
             Kitchen::setOnNotify(onNotify);
             Kitchen::Initialize((long) basetime, c, nbCookers);
             Kitchen::initializeProcessIds(getppid(), getpid());
