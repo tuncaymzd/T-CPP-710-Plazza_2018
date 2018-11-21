@@ -43,13 +43,7 @@ SOURCES += \
     shared/TimerCompletedListener.cpp \
 
 
-HEADERS += \
-        mainwindow.h \
-    include/Controleur.hpp \
-    include/Dispatcher.h \
-    include/Error.h \
-    include/Parser.hpp \
-    include/ParserConfig.h \
+HEADERS += \    
     mainwindow.h \
     include/Controleur.hpp \
     include/Dispatcher.h \
@@ -70,27 +64,6 @@ HEADERS += \
     shared/includes/Regina.h \
     shared/includes/Timer.h \
     shared/includes/TimerCompletedListener.h \
-    mainwindow.h \
-    include/Controleur.hpp \
-    include/Dispatcher.h \
-    include/Error.h \
-    include/Parser.hpp \
-    include/ParserConfig.h \
-    shared/includes/American.h \
-    shared/includes/BasePizza.h \
-    shared/includes/Command.h \
-    shared/includes/Cooker.h \
-    shared/includes/Delegates.h \
-    shared/includes/Enums.h \
-    shared/includes/Fantasia.h \
-    shared/includes/ICook.h \
-    shared/includes/ITimerCompletedListener.h \
-    shared/includes/Kitchen.h \
-    shared/includes/Margarita.h \
-    shared/includes/Regina.h \
-    shared/includes/Timer.h \
-    shared/includes/TimerCompletedListener.h \
-    mainwindow.h
 
 FORMS += \
         mainwindow.ui

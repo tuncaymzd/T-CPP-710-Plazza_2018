@@ -5,9 +5,6 @@
 #include <string>
 #include <QFileDialog>
 #include <QInputDialog>
-#include "include/Controleur.hpp"
-#include "shared/includes/Kitchen.h"
-#include "include/Dispatcher.h"
 
 using std::string;
 
@@ -95,22 +92,16 @@ void MainWindow::runClicked()
 
 void MainWindow::runProcesses()
 {
-    Controleur *control = new Controleur();
-        int numbersOfCookers = cookerCount;
-        int numbersOfKitchens = kitchenCount;
-        int baseTime = timeCount;
+        c = new Controleur();
         std::queue<Command> listOfCommands;
+
         try {
-            control->setNumbersOfCooker(numbersOfCookers);
-            control->setNumbersOfKitchens(kitchenCount);
-            control->setBaseTime(timeCount);
-            control->readFile(configFile);
-    //        Kitchen::setOnNotify(logNotification);
-    //        auto cmds = control->getTheCommands();
-    //        Kitchen::Initialize(1000, cmds, cmds.size());
-    //        Kitchen::run();
-            listOfCommands = control->getTheCommands();
-            Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
+            c->setNumbersOfCooker(cookerCount);
+            c->setNumbersOfKitchens(kitchenCount);
+            c->setBaseTime(timeCount);
+            c->readFile(configFile);
+            listOfCommands = c->getTheCommands();
+            Dispatcher::initialize(kitchenCount, cookerCount, timeCount, listOfCommands);
             Dispatcher::splitTheCommands();
             Dispatcher::setOnNotify(notif);
             Dispatcher::createKitchens();

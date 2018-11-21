@@ -4,7 +4,9 @@
 #include <QMainWindow>
 #include <QStringListModel>
 #include <string>
+#include "include/Controleur.hpp"
 #include "shared/includes/Delegates.h"
+#include "include/Dispatcher.h"
 
 using std::string;
 
@@ -14,13 +16,6 @@ class MainWindow;
 
 class MainWindow : public QMainWindow
 {
-    Q_OBJECT
-    QStringListModel *model;
-    int timeCount = 0;
-    int cookerCount = 0;
-    int kitchenCount = 0;
-    string configFile = "";
-    notifierEventHandler notif;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
@@ -39,6 +34,13 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Controleur *c;
+    QStringListModel *model;
+    int timeCount = 0;
+    int cookerCount = 0;
+    int kitchenCount = 0;
+    string configFile = "";
+    notifierEventHandler notif;
 };
 
 #endif // MAINWINDOW_H
