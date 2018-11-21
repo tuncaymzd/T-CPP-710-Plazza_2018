@@ -13,6 +13,20 @@ void logNotification(string text) {
     logMutex.unlock();
 }
 
+int sizeElem(std::string elem) {
+    int cpt = 1;
+
+    if (elem.size() == 0){
+        return 0;
+    }
+    for (int i = 0; i < elem.size(); i++) {
+        if(elem[i] == ' '){
+            cpt++;
+        }
+    }
+    return cpt;
+}
+
 int main(int argc, char* argv[])
 {
     ///Init
@@ -23,10 +37,6 @@ int main(int argc, char* argv[])
     std::queue<Command> listOfCommands;
     try {
         control->readFile(argv[1]);
-//        Kitchen::setOnNotify(logNotification);
-//        auto cmds = control->getTheCommands();
-//        Kitchen::Initialize(1000, cmds, cmds.size());
-//        Kitchen::run();
         listOfCommands = control->getTheCommands();
         Dispatcher::initialize(numbersOfKitchens, numbersOfCookers, baseTime, listOfCommands);
         Dispatcher::splitTheCommands();

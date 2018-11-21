@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2018
-** Error.cpp
+** Error.h
 ** File description:
 ** exception class
 */
@@ -11,8 +11,15 @@
 #ifndef PLAZZA_ERROR_H
 #define PLAZZA_ERROR_H
 
+
 class Error: public std::exception {
 public:
+
+    //! this is error constructor
+    /*!
+      \param phrase, represent description of error
+      \return void
+    */
     Error(std::string const& phrase="") throw()
             :m_phrase(phrase){}
 
