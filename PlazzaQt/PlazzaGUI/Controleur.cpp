@@ -1,8 +1,13 @@
 //
 // Created by Tuncay Turkoglu on 06/11/2018.
 //
-
+#pragma once
 #include "include/Controleur.hpp"
+
+Controleur::Controleur()
+{
+
+}
 
 Controleur::Controleur(int argc, char* argv[]) {
     this->parserConf = new ParserConfig();

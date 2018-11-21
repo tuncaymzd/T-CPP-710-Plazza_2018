@@ -24,6 +24,7 @@ class Controleur {
 public:
 
     Controleur(int argc, char* argv[]);
+    Controleur();
     Controleur(int argc, char* argv[], notifierEventHandler notif);
     ~Controleur();
 

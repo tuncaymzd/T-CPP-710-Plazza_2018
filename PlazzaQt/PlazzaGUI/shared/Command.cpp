@@ -2,6 +2,7 @@
 // Created by Tuncay Turkoglu on 05/11/2018.
 //
 
+#pragma once
 #include "includes/Command.h"
 
 Command::Command(std::string name, std::string size) {
