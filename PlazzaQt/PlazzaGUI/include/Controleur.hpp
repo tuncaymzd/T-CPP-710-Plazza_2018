@@ -57,7 +57,7 @@ public:
 private:
     std::queue<Command> theCommands;
     ParserConfig *parserConf;
-    Parser *pars;
+    Parser pars;
     int baseTime = 0;
     int numbersOfKitchens = 0;
     int numbersOfCooker = 0;

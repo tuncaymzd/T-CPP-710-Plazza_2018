@@ -11,7 +11,7 @@ Controleur::Controleur()
 
 Controleur::Controleur(int argc, char* argv[]) {
     this->parserConf = new ParserConfig();
-    this->pars = new Parser();
+    //this->pars = new Parser();
     this->parserConf->initParser(argc, argv);
     this->baseTime = this->parserConf->getBaseTime();
     this->numbersOfKitchens = this->parserConf->getNumbersOfKitchens();
@@ -47,7 +47,7 @@ void Controleur::readFile(std::string file) {
         throw Error("This file can not be opened");
     }
     while (getline(infile, line)) {
-        cmd = this->pars->parse(line);
+        cmd = this->pars.parse(line);
         pizzaName = std::get<0>(cmd);
         size = std::get<1>(cmd);
         nb = std::get<2>(cmd);
@@ -66,7 +66,7 @@ Controleur::~Controleur() {
 
 Controleur::Controleur(int argc, char **argv, notifierEventHandler notif) {
     this->parserConf = new ParserConfig();
-    this->pars = new Parser();
+    //this->pars = new Parser();
     this->parserConf->initParser(argc, argv);
     this->baseTime = this->parserConf->getBaseTime();
     this->numbersOfKitchens = this->parserConf->getNumbersOfKitchens();

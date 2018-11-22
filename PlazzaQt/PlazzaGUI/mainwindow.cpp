@@ -31,6 +31,8 @@ MainWindow::MainWindow(QWidget *parent) :
     model->setStringList(stringList);
     ui->cookingListView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->cookingListView->setModel(model);
+
+    cookerCount = kitchenCount = timeCount = 2;
 }
 
 MainWindow::~MainWindow()
@@ -76,7 +78,7 @@ void MainWindow::setKitchenClicked()
 
 void MainWindow::browseButtonClicked()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Open Image"), "/home/", tr("Image Files (*.txt)"));
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open Image"), "/home/damien/Desktop/backup (copy)/T-CPP-710-Plazza_2018/commandes.txt", tr("Image Files (*.txt)"));
     ui->filePathLineEdit->setText(fileName);
     configFile = fileName.toUtf8().constData();
 }

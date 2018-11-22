@@ -93,7 +93,7 @@ std::tuple<std::string, std::string, int> Parser::parse(std::string line)
         pizzaName = compare(stock[0], this->pizza);
         return std::make_tuple(pizzaName, pizzaSize, pizzaQty);
     } else if (size == 2) {
-        pizzaName = compare(stock[0], this->pizza);
+        pizzaName = compare(stock[0], (*this).pizza);
         try {
             pizzaQty = isValidInt(stock[1]);
         } catch (const std::exception& e) {
