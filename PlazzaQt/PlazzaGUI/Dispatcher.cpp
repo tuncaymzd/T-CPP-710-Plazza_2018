@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <wait.h>
 #include "include/Dispatcher.h"
 #include "shared/includes/Kitchen.h"
 #include "shared/includes/Cooker.h"
@@ -81,6 +80,7 @@ void Dispatcher::createKitchens() {
             break;
         }
         wait(NULL);
+        c.pop();
     }
 }
 
