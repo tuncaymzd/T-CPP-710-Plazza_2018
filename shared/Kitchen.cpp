@@ -18,7 +18,6 @@ std::vector<std::thread*> Kitchen::threadPool;
 std::mutex Kitchen::cookerMutex;
 long Kitchen::time;
 
-///Execute the cooking process
 void Kitchen::run() {
     ICook *currentCooker;
     std::thread *th;
@@ -37,18 +36,14 @@ void Kitchen::run() {
     killMe();
 }
 
-/// Set a notifier to Notify to the user of any info in this process
-/// \param notif the notifier
 void Kitchen::setOnNotify(notifierEventHandler notif) {
     onNotify = notif;
 }
 
-///Hang up this process when signal is called
 void Kitchen::hangMeUp() {
     onNotify("Kitchen : "+std::to_string(myProcessesID)+" is hanging up.");
 }
 
-///Kill this process
 void Kitchen::killMe() {
     onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.\n");
     exit(0);
@@ -58,8 +53,6 @@ void Kitchen::setCookers(std::queue<ICook *> cookQ) {
     cookQueue = cookQ;
 }
 
-///Called when a thread is terminated, and
-/// If there is no more work, exit the process.
 bool Kitchen::threadTerminated(int thindex) {
     cookerMutex.lock();
     if(threadPool.empty()) {
@@ -74,7 +67,6 @@ bool Kitchen::threadTerminated(int thindex) {
     return false;
 }
 
-///Notify to parent process that this process has finished working.
 void Kitchen::notifyFinished() {
 
 }
@@ -89,8 +81,6 @@ void Kitchen::Initialize(long t, std::queue<Command> pizzaCommands, int cmdNum) 
     {
         pCommand = pizzaCommands.front();
         pizzaName = pCommand.getNamePizza();
-//        std::transform(pizzaName.begin(),
-//                       pizzaName.end(), pizzaName.begin(), ::tolower);
         if (pizzaName == "Fantasia") {
             cookQueue.push(new Cooker(*new Fantasia(pCommand.getSize(), time), i, onNotify));
         } else if (pizzaName == "Margarita") {
@@ -104,9 +94,6 @@ void Kitchen::Initialize(long t, std::queue<Command> pizzaCommands, int cmdNum) 
     }
 }
 
-/// Stating which Id belongs to this process and the parent's
-/// \param parentId the parent's pid
-/// \param myId this process' PID
 void Kitchen::initializeProcessIds(int parentId, int myId) {
     parentProcessesID = parentId;
     myProcessesID = myId;

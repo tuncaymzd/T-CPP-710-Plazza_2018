@@ -82,6 +82,7 @@ void Dispatcher::createKitchens() {
         }
         wait(NULL);
     }
+
 }
 
 void Dispatcher::setOnNotify(notifierEventHandler notif) {
