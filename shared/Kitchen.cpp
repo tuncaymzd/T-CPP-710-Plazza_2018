@@ -32,6 +32,9 @@ void Kitchen::run() {
         th->join();
         //std::this_thread::sleep_for (std::chrono::milliseconds(2000));
     }
+    std::this_thread::sleep_for (std::chrono::milliseconds(time*5));
+    onNotify("\n Ending threads after 5T time: \n");
+    killMe();
 }
 
 /// Set a notifier to Notify to the user of any info in this process
@@ -47,7 +50,7 @@ void Kitchen::hangMeUp() {
 
 ///Kill this process
 void Kitchen::killMe() {
-    onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.");
+    onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.\n");
     exit(0);
 }
 
@@ -77,9 +80,10 @@ void Kitchen::notifyFinished() {
 }
 
 ///Initialize appropriate variables for kitchen functioning
-void Kitchen::Initialize(long time, std::queue<Command> pizzaCommands, int cmdNum) {
+void Kitchen::Initialize(long t, std::queue<Command> pizzaCommands, int cmdNum) {
     Command pCommand;
     string pizzaName = "";
+    time = t;
 
     for(int i = 0; i < cmdNum; i++)
     {
