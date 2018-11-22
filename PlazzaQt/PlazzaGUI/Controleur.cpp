@@ -6,7 +6,9 @@
 
 Controleur::Controleur()
 {
-
+    this->baseTime = 0;
+    this->numbersOfKitchens = 0;
+    this->numbersOfCooker = 0;
 }
 
 Controleur::Controleur(int argc, char* argv[]) {
