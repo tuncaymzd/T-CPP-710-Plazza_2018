@@ -33,6 +33,12 @@ public:
       \return void
     */
     static void killMe();
+    //! kill this process (kitchen)
+    /*!
+      \param void
+      \return void
+    */
+    static void killMe(int v);
 
     //! Hang up this process when signal is called
     /*!

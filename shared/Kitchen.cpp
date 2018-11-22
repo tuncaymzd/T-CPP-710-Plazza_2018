@@ -8,6 +8,7 @@
 #include "includes/Regina.h"
 #include "includes/Margarita.h"
 #include "includes/American.h"
+#include <signal.h>
 
 bool Kitchen::cooking;
 int Kitchen::myProcessesID;
@@ -71,11 +72,18 @@ void Kitchen::notifyFinished() {
 
 }
 
+void Kitchen::killMe(int v)
+{
+    killMe();
+}
+
 ///Initialize appropriate variables for kitchen functioning
 void Kitchen::Initialize(long t, std::queue<Command> pizzaCommands, int cmdNum) {
     Command pCommand;
     string pizzaName = "";
     time = t;
+
+    signal(SIGQUIT, Kitchen::killMe);
 
     for(int i = 0; i < cmdNum; i++)
     {
