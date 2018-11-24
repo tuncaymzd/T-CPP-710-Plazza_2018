@@ -33,7 +33,7 @@ void Kitchen::run() {
         //std::this_thread::sleep_for (std::chrono::milliseconds(2000));
     }
     std::this_thread::sleep_for (std::chrono::milliseconds(time*5));
-    onNotify("\n Ending threads after 5T time: \n");
+    onNotify("\nEnding cooking after 5T time: \n");
     killMe();
 }
 
@@ -47,6 +47,7 @@ void Kitchen::hangMeUp() {
 
 void Kitchen::killMe() {
     onNotify("Kitchen : "+std::to_string(myProcessesID)+" is exiting.\n");
+    kill(parentProcessesID, SIGQUIT);
     exit(0);
 }
 
@@ -74,7 +75,7 @@ void Kitchen::notifyFinished() {
 
 void Kitchen::killMe(int v)
 {
-    killMe();
+    onNotify("Kitchen : "+std::to_string(myProcessesID)+" was killed by : .\n"+std::to_string(v));
 }
 
 ///Initialize appropriate variables for kitchen functioning

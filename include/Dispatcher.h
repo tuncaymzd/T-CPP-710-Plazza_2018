@@ -65,6 +65,9 @@ public:
     */
     static void setOnNotify(notifierEventHandler notif);
 
+    //! Action performed when this process is killed
+    static void onKill(int sig);
+
     static notifierEventHandler onNotify;
     static int nbKitchens;
     static int nbCookers;

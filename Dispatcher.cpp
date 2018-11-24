@@ -15,6 +15,7 @@ std::queue<std::queue<Command>> Dispatcher::theCommandsSplit;
 notifierEventHandler Dispatcher::onNotify;
 
 void Dispatcher::initialize(int numberOfKitchens, int numberOfCookers, int time, std::queue<Command> pizzaCommands) {
+    signal(SIGQUIT, Dispatcher::onKill);
     nbCookers = numberOfCookers;
     nbKitchens = numberOfKitchens;
     basetime = time;
@@ -87,4 +88,8 @@ void Dispatcher::createKitchens() {
 
 void Dispatcher::setOnNotify(notifierEventHandler notif) {
     onNotify = notif;
+}
+
+void Dispatcher::onKill(int sig) {
+    onNotify("\nKitchen " + std::to_string(sig) + " has finished its job, let's move next.\n\n");
 }
