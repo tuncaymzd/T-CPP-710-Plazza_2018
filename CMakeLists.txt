@@ -25,8 +25,6 @@ add_executable(Plazza
         shared/includes/American.h
         shared/Fantasia.cpp
         shared/includes/Fantasia.h
-        shared/includes/ITimerCompletedListener.h
-        shared/includes/Enums.h
         shared/includes/Delegates.h
         shared/includes/ICook.h
         shared/Cooker.cpp
